@@ -1,0 +1,17 @@
+.profilePhotoBlock {
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+#profilePhoto {
+  border: 5px solid #370c5a;
+  border-radius: 50%;
+}
+
+.profileTextBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}

@@ -1,0 +1,18 @@
+Blues
+    Light- c8e1f4
+    White- fcfcfc
+    Dark- 04365d
+    Primary- 1f6193
+    Secondary- 4b86b4
+    Info- 81b6df
+
+Greyscale (text)
+    Dark- 19181c
+    Medium Dark- 67696b
+    Medium- 979593
+    Medium light- d6d2d7
+
+Accents
+    1- 370c5a
+    2- e84058
+    3- 04524f
