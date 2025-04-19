@@ -1,3 +1,5 @@
+@import 'variables';
+
 * {
   font-size: 20px;
   margin: 0;
@@ -7,13 +9,13 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #19181c;
+  background-color: $grey-dark;
   width: 100%;
 }
 
 body {
-  background-color: white;
-  color: #19181c;
+  background-color: $blue-white;
+  color: $grey-dark;
   max-width: 2000px;
   height: 100%;
   width: 100%;
@@ -27,12 +29,12 @@ body {
 } for dark mode*/
 
 h1 {
-  color: #1f6193;
+  color: $blue-primary;
   font-size: 1.5rem;
 }
 
 h2 {
-  color: #04365d;
+  color: $blue-dark;
   font-size: 1rem;
 }
 
@@ -42,7 +44,7 @@ em {
 
 #link,
 #link:visited {
-  color: #370c5a;
+  color: $accent-1;
   cursor: pointer;
 }
 
@@ -98,7 +100,7 @@ em {
 
 .external-social-button {
   background-color: transparent;
-  border: 2px solid #19181c;
+  border: 2px solid $grey-dark;
   border-radius: 1rem;
   cursor: pointer;
   padding: 0.25rem;
@@ -115,17 +117,17 @@ em {
 }
 
 #github-button {
-  background-color: #19181c;
-  color: #fcfcfc;
+  background-color: $grey-dark;
+  color: $blue-white;
 }
 
 #linked-button {
-  background-color: #fcfcfc;
-  color: #19181c;
+  background-color: $blue-white;
+  color: $grey-dark;
 }
 
 #chess-button {
-  background-color: #fcfcfc;
+  background-color: $blue-white;
   width: auto;
   height: auto;
 }

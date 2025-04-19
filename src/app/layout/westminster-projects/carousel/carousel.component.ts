@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './carousel.component.html',
-  styleUrl: './carousel.component.css',
+  styleUrl: './carousel.component.scss',
 })
 export class CarouselComponent implements OnInit {
   @Input() items: any[] = [];

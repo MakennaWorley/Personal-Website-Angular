@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-banner',
   imports: [],
   templateUrl: 'banner.component.html',
-  styleUrls: ['./banner.component.css', '../../../styles.css'],
+  styleUrls: ['./banner.component.scss', '../../../styles.scss'],
 })
 export class BannerComponent {}

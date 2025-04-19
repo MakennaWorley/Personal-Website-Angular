@@ -1,6 +1,8 @@
+@import '../../../variables.scss';
+
 nav {
-  background-color: #19181c;
-  color: #fcfcfc;
+  background-color: $grey-dark;
+  color: $blue-white;
   padding: 0.5rem;
   position: sticky;
   top: 0;
@@ -18,7 +20,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: #fcfcfc;
+  color: $blue-white;
   font-size: 1rem;
   padding: 0.5rem 0.5rem;
   text-decoration: none;
@@ -26,16 +28,16 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #d6d2d7;
-  color: #19181c;
+  background-color: $grey-medium-light;
+  color: $grey-dark;
   transition: background-color 0.3s ease;
 }
 
 #mode-switch {
   position: relative;
-  border: 0.25rem solid #04365d;
+  border: 0.25rem solid $blue-dark;
   border-radius: 1rem;
-  background: #4b86b4;
+  background: $blue-secondary;
   height: 2rem;
   width: 5rem;
   transition: background-color 0.3s;
@@ -43,5 +45,5 @@ nav ul li a:hover {
 }
 
 #mode-switch.dark {
-  background: #19181c;
+  background: $grey-dark;
 }

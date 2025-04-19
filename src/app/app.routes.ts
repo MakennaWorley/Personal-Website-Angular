@@ -26,10 +26,6 @@ export const routes: Routes = [
         path: 'westminster',
         loadComponent: () => import('./layout/westminster-projects/westminster-projects.component').then((m) => m.WestminsterProjectsComponent),
       },
-      {
-        path: 'contact',
-        loadComponent: () => import('./layout/contact/contact.component').then((m) => m.ContactComponent),
-      },
     ],
   },
 ];
