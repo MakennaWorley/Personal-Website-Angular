@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-research',
   imports: [],
   templateUrl: './research.component.html',
-  styleUrl: './research.component.css',
+  styleUrl: './research.component.scss',
 })
 export class ResearchComponent {}

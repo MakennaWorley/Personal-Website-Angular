@@ -1,3 +1,5 @@
+@import '../../../variables.scss';
+
 * {
   box-sizing: border-box;
 }
@@ -14,7 +16,7 @@
   content: '';
   position: absolute;
   width: 0.5rem;
-  background-color: #c8e1f4;
+  background-color: $blue-light;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -33,8 +35,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  background-color: #c8e1f4;
-  border: 4px solid #4b86b4;
+  background-color: $blue-light;
+  border: 4px solid $blue-secondary;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -58,13 +60,13 @@
 
 .content {
   padding: 20px 30px;
-  background-color: #fcfcfc;
+  background-color: $blue-white;
+  border: 0.25rem solid $blue-dark;
   position: relative;
   border-radius: 3rem;
-  border: 0.25rem solid #04365d;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .timeline::after {
     left: 31px;
   }

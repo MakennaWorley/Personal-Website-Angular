@@ -4,6 +4,12 @@ import { Component } from '@angular/core';
   selector: 'app-navbar',
   imports: [],
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css', '../../../styles.css'],
+  styleUrls: ['./navbar.component.scss', '../../../styles.scss'],
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+  isMenuOpen = false;
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+}

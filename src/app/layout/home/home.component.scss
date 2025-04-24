@@ -1,3 +1,5 @@
+@import '../../../variables.scss';
+
 .profilePhotoBlock {
   align-items: center;
   height: 100%;
@@ -5,7 +7,7 @@
 }
 
 #profilePhoto {
-  border: 5px solid #370c5a;
+  border: 5px solid $accent-1;
   border-radius: 50%;
 }
 

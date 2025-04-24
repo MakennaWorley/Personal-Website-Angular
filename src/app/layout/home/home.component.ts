@@ -5,6 +5,6 @@ import { BannerComponent } from '../../components/banner/banner.component';
   selector: 'app-home',
   imports: [BannerComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  styleUrl: './home.component.scss',
 })
 export class HomeComponent {}

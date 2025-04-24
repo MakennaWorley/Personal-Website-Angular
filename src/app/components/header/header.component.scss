@@ -1,3 +1,5 @@
+@import '../../../variables.scss';
+
 @keyframes gradientAnimation {
   0%,
   100% {
@@ -20,7 +22,7 @@ header {
   align-items: center;
   animation: gradientAnimation 7s ease infinite;
   -webkit-animation: gradientAnimation 15s ease infinite;
-  background: linear-gradient(45deg, #04365d, #1f6193, #4b86b4, #81b6df);
+  background: linear-gradient(45deg, $blue-dark, $blue-primary, $blue-secondary, $blue-info);
   background-size: 200% 200%;
   background-position: 0% 50%;
   justify-content: center;
@@ -30,7 +32,7 @@ header {
 
 #headerText {
   font-size: 3rem;
-  color: #fcfcfc;
+  color: $blue-white;
   padding: 3rem 0 3rem 0;
   text-align: center;
 }

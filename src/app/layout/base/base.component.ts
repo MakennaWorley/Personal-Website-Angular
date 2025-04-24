@@ -9,6 +9,6 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
   selector: 'app-base',
   imports: [RouterOutlet, FooterComponent, HeaderComponent, NavbarComponent],
   templateUrl: './base.component.html',
-  styleUrl: './base.component.css',
+  styleUrl: './base.component.scss',
 })
 export class BaseComponent {}
