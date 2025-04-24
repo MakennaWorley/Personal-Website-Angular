@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss', '../../../styles.scss'],
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+  isMenuOpen = false;
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+}

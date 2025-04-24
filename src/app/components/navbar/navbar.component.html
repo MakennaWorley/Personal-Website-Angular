@@ -1,11 +1,14 @@
 <nav>
-  <ul>
+  <div class="nav-header">
+    <button class="burger" (click)="toggleMenu()">☰</button>
+  </div>
+
+  <ul [class.open]="isMenuOpen">
     <li><a href="/">Home</a></li>
     <li><a href="/about">About</a></li>
     <li><a href="/research">Research</a></li>
     <li><a href="/personal">Personal Projects</a></li>
     <li><a href="/westminster">Westminster Projects</a></li>
     <li><a href="/3d">3D Visualizer</a></li>
-    <!-- External link, so `href` is okay -->
   </ul>
 </nav>
