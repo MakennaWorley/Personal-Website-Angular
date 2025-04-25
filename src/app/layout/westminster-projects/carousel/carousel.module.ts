@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CarouselComponent } from './carousel.component';
 
 @NgModule({
-  imports: [CommonModule, CarouselComponent],
-  exports: [CarouselComponent],
+	imports: [CommonModule, CarouselComponent],
+	exports: [CarouselComponent]
 })
 export class CarouselModule {}

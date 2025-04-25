@@ -1,199 +1,203 @@
 <app-banner></app-banner>
 
 <div class="block-container">
-  <div class="block-image">
-    <img src="images/headshot2024.jpg" alt="A photo of me taken July 2024" id="profilePhoto" />
-  </div>
-  <div class="block-text">
-    <h2 class="new-line">
-      Westminster University Class of '26, Honors Student and Majoring in Computer Science and Minoring in Mathematics and Data Science
-    </h2>
-    <p class="new-line indent">
-      I'm a current student at Westminster University studying Computer Science, Data Science, and Mathematics. I am also part of the Honors College,
-      First Scholars (First Generation College student) program, and have been on the Dean's List for all five of my semesters.
-    </p>
-    <p class="new-line indent">
-      I've been an intern for both Ken Garff in their Data and Analytics Department and RanLife Home Loans in their Software Developer Department.
-      I've also worked in the Mathematics, Computer Science, and Physics Tutoring Lab in the Giovale Library on Campus and as an Undergraduate
-      Research Assistant.
-    </p>
-    <p class="new-line indent">
-      I also volunteer at Oakwood Elementary's Chess Club as an instructor and Co-Director. There I sometimes run the club and manage all of the
-      student volunteers. I have also been working on ChessWeb to automate updating ratings and pairings which save 4+ hours a week of the director's
-      time.
-    </p>
-    <p class="new-line indent">
-      I have also had the amazing opportunity to compete in HackUSU 2025 in the datathon category where my teams and myself took 1st place! I've also
-      had the amazing opportunity to represent Westminster at NCWIT 2023, 2024, and 2025 as a college panelist!
-    </p>
-    <p class="new-line">Research Projects I've worked on as undergraduate research:</p>
-    <ul>
-      <li>The Official Westminster University's Computer Science Department Discord Server with Dr. Helen Hu</li>
-      <li>
-        Problems and solutions guides for Module 2 and Module 4 on
-        <em>A Quantitative Reasoning for Social Justice Active Learning Textbook</em>
-        with Dr. Bianca Thompson
-      </li>
-      <li>Circuit diagram drawing and modeling software for CMPT 328 with Shreeya Maskey and Dr. Kathryn Lenth</li>
-      <a class="end" id="link" href="research.php">Learn more about my research</a>
-    </ul>
-  </div>
+	<div class="block-image">
+		<img src="images/headshot2024.jpg" alt="A photo of me taken July 2024" id="profilePhoto" />
+	</div>
+	<div class="block-text">
+		<h2 class="new-line">
+			Westminster University Class of '26, Honors Student and Majoring in Computer Science and Minoring in Mathematics and Data Science
+		</h2>
+		<p class="new-line indent">
+			I'm a current student at Westminster University studying Computer Science, Data Science, and Mathematics. I am also part of the Honors
+			College, First Scholars (First Generation College student) program, and have been on the Dean's List for all five of my semesters.
+		</p>
+		<p class="new-line indent">
+			I've been an intern for both Ken Garff in their Data and Analytics Department and RanLife Home Loans in their Software Developer
+			Department. I've also worked in the Mathematics, Computer Science, and Physics Tutoring Lab in the Giovale Library on Campus and as an
+			Undergraduate Research Assistant.
+		</p>
+		<p class="new-line indent">
+			I also volunteer at Oakwood Elementary's Chess Club as an instructor and Co-Director. There I sometimes run the club and manage all of the
+			student volunteers. I have also been working on ChessWeb to automate updating ratings and pairings which save 4+ hours a week of the
+			director's time.
+		</p>
+		<p class="new-line indent">
+			I have also had the amazing opportunity to compete in HackUSU 2025 in the datathon category where my teams and myself took 1st place! I've
+			also had the amazing opportunity to represent Westminster at NCWIT 2023, 2024, and 2025 as a college panelist!
+		</p>
+		<p class="new-line">Research Projects I've worked on as undergraduate research:</p>
+		<ul>
+			<li>The Official Westminster University's Computer Science Department Discord Server with Dr. Helen Hu</li>
+			<li>
+				Problems and solutions guides for Module 2 and Module 4 on
+				<em>A Quantitative Reasoning for Social Justice Active Learning Textbook</em>
+				with Dr. Bianca Thompson
+			</li>
+			<li>Circuit diagram drawing and modeling software for CMPT 328 with Shreeya Maskey and Dr. Kathryn Lenth</li>
+			<a class="end" id="link" href="research.php">Learn more about my research</a>
+		</ul>
+	</div>
 </div>
 <div class="block-container">
-  <div class="block-text">
-    <h1 class="center new-line">Some Things I've Worked/Working On Independently</h1>
-    <h2 class="center new-line">
-      These are just a couple of my projects I'm working on, my Github is most likely up to date with my latest activity.
-    </h2>
-    <ul>
-      <li>This website! The original version of this website used PHP but I have since rewritten the codebase to use Angular!</li>
-      <li>
-        From Scratch Database: A recreation of a SQL database using Rust to create, read, update, and delete from csv files. I'm aiming to have this
-        database do almost anything a SQL database can do including but not limited to full joins, aggregations, SQL math, aliasing, and transactions.
-        Possibly even more functions that I may or many not need in some upcoming projects.
-      </li>
-      <div class="new-line center">
-        <button
-          onclick="window.open('https://github.com/MakennaWorley/From-Scratch-Database-Rust','_blank');"
-          class="external-social-button"
-          id="github-button"
-        >
-          <img src="images/github.png" alt="github icon" class="external-social-icon" />
-          Link to GitHub Repo
-        </button>
-      </div>
-      <li>
-        ChessWeb: A Django webapp for the Oakwood Elementary's Chess Club which uses a SQLite database to hold player information such as their name
-        and rating (ELO). This program uses a greedy algorithm to pair players based on their rating and updates their ratings based on the result of
-        their previous games. You can find the code on my GitHub, it's in pre-release!
-      </li>
-      <div class="new-line center">
-        <button onclick="window.open('https://github.com/MakennaWorley/ChessWeb-Django','_blank');" class="external-social-button" id="github-button">
-          <img src="images/github.png" alt="github icon" class="external-social-icon" />
-          Link to GitHub Repo
-        </button>
-      </div>
-      <li>
-        3D Visualizer: A 3d plotter for prey and predator equations making use of three.js to aproximate the populations using either Euler's Method
-        or Runge Kutta 4. This was completed as my final project with Brynlee Thain for our Differential Equations class! You can either visit GitHub
-        for the source code or <a class="end" id="link" href="/3d" target="_blank">go to the web version</a>
-      </li>
-      <div class="new-line center">
-        <button
-          onclick="window.open('https://github.com/MakennaWorley/3D-Visualization-Plotter-JSPython','_blank');"
-          class="external-social-button"
-          id="github-button"
-        >
-          <img src="images/github.png" alt="github icon" class="external-social-icon" />
-          Link to GitHub Repo
-        </button>
-      </div>
-      <li>
-        Python Texas Hold'em: Just a simple program that plays Texas Hold'em (at least how I understand it) against either a random player, a simple
-        AI player using minimax, or a simple AI player using AlphaBeta pruning. This was just a fun project I spun up to make sure I knew how these
-        algorithms worked in other situations.
-      </li>
-      <div class="new-line center">
-        <button
-          onclick="window.open('https://github.com/MakennaWorley/Card-Games-Python','_blank');"
-          class="external-social-button"
-          id="github-button"
-        >
-          <img src="images/github.png" alt="github icon" class="external-social-icon" />
-          Link to GitHub Repo
-        </button>
-      </div>
-      <a class="end" id="link" href="personal.php">Learn more about my personal projects</a>
-    </ul>
-  </div>
+	<div class="block-text">
+		<h1 class="center new-line">Some Things I've Worked/Working On Independently</h1>
+		<h2 class="center new-line">
+			These are just a couple of my projects I'm working on, my Github is most likely up to date with my latest activity.
+		</h2>
+		<ul>
+			<li>This website! The original version of this website used PHP but I have since rewritten the codebase to use Angular!</li>
+			<li>
+				From Scratch Database: A recreation of a SQL database using Rust to create, read, update, and delete from csv files. I'm aiming to
+				have this database do almost anything a SQL database can do including but not limited to full joins, aggregations, SQL math, aliasing,
+				and transactions. Possibly even more functions that I may or many not need in some upcoming projects.
+			</li>
+			<div class="new-line center">
+				<button
+					onclick="window.open('https://github.com/MakennaWorley/From-Scratch-Database-Rust','_blank');"
+					class="external-social-button"
+					id="github-button"
+				>
+					<img src="images/github.png" alt="github icon" class="external-social-icon" />
+					Link to GitHub Repo
+				</button>
+			</div>
+			<li>
+				ChessWeb: A Django webapp for the Oakwood Elementary's Chess Club which uses a SQLite database to hold player information such as
+				their name and rating (ELO). This program uses a greedy algorithm to pair players based on their rating and updates their ratings
+				based on the result of their previous games. You can find the code on my GitHub, it's in pre-release!
+			</li>
+			<div class="new-line center">
+				<button
+					onclick="window.open('https://github.com/MakennaWorley/ChessWeb-Django','_blank');"
+					class="external-social-button"
+					id="github-button"
+				>
+					<img src="images/github.png" alt="github icon" class="external-social-icon" />
+					Link to GitHub Repo
+				</button>
+			</div>
+			<li>
+				3D Visualizer: A 3d plotter for prey and predator equations making use of three.js to aproximate the populations using either Euler's
+				Method or Runge Kutta 4. This was completed as my final project with Brynlee Thain for our Differential Equations class! You can
+				either visit GitHub for the source code or <a class="end" id="link" href="/3d" target="_blank">go to the web version</a>
+			</li>
+			<div class="new-line center">
+				<button
+					onclick="window.open('https://github.com/MakennaWorley/3D-Visualization-Plotter-JSPython','_blank');"
+					class="external-social-button"
+					id="github-button"
+				>
+					<img src="images/github.png" alt="github icon" class="external-social-icon" />
+					Link to GitHub Repo
+				</button>
+			</div>
+			<li>
+				Python Texas Hold'em: Just a simple program that plays Texas Hold'em (at least how I understand it) against either a random player, a
+				simple AI player using minimax, or a simple AI player using AlphaBeta pruning. This was just a fun project I spun up to make sure I
+				knew how these algorithms worked in other situations.
+			</li>
+			<div class="new-line center">
+				<button
+					onclick="window.open('https://github.com/MakennaWorley/Card-Games-Python','_blank');"
+					class="external-social-button"
+					id="github-button"
+				>
+					<img src="images/github.png" alt="github icon" class="external-social-icon" />
+					Link to GitHub Repo
+				</button>
+			</div>
+			<a class="end" id="link" href="personal.php">Learn more about my personal projects</a>
+		</ul>
+	</div>
 </div>
 <div class="block-container">
-  <div class="block-text">
-    <h1 class="new-line">Chess and Video Games</h1>
-    <p class="new-line indent">
-      I believe that what got me into Computer Science was truly my love for video games. I grew up playing Chess at my local Elementary's Chess club
-      when I was around 8 (I had started playing chess at 5) which then spiraled into my parents wanting to get me into other educational games. I
-      remember playing this submarine game where you had to do math problems to progress vividly.
-    </p>
-    <p class="new-line indent">
-      After a bit of begging, they gave in and I was just playing regular old video games like Mario Kart. So I would spend hours grinding away in
-      Pokemon (which then led be to discover the 3ds modding Scene around 2015-2016) and the rest is history. I'm an avid modder of Nintendo and
-      Playstation handhelds and consoles. So far, I'm modded a bunch of 3DS systems, a couple of Nintendo Switches, Wii's and Wii U, a PSP 3000, and a
-      PS Vita.
-    </p>
-    <a class="end" id="link" href="about.php">Learn more about me</a>
-  </div>
-  <div class="block-text">
-    <h1 class="new-line">A Hopeful Full Stack Developer in the Making!</h1>
-    <p class="new-line indent">
-      At the moment, I've made a bunch of web applications using LAMP, Django, Angular + Nest.js, and React. Some that use a database, like the LAMP
-      version of ChessWeb which was my final for my database class which I have rewritten to use the Django framework (uses SQLite). I'vs also worked
-      on both PHP and Angular apps via my internships at RanLife and Ken Garff Automotive respectively.
-    </p>
-    <p class="new-line indent">
-      Aside from just web development, I've worked on applications using Java, Python, C/C++, Rust, PHP, and other languages briefly like Clojure,
-      Scala, Pascal, and Haskell to name a few. I've set up and maintained linux servers running Appache, Ubuntu, and Red Hat. I've also worked with
-      raspberry pi (doing SMS texting with python scripts) and Arduino boards with robotics. I've dabbled in Blender and Fusion 360 for creating 3D
-      models that I print out.
-    </p>
-    <p class="new-line indent">
-      I'm hoping to also dive into other niche projects like Godot Game Development or other random projects I spin up every month of so.
-    </p>
-  </div>
+	<div class="block-text">
+		<h1 class="new-line">Chess and Video Games</h1>
+		<p class="new-line indent">
+			I believe that what got me into Computer Science was truly my love for video games. I grew up playing Chess at my local Elementary's Chess
+			club when I was around 8 (I had started playing chess at 5) which then spiraled into my parents wanting to get me into other educational
+			games. I remember playing this submarine game where you had to do math problems to progress vividly.
+		</p>
+		<p class="new-line indent">
+			After a bit of begging, they gave in and I was just playing regular old video games like Mario Kart. So I would spend hours grinding away
+			in Pokemon (which then led be to discover the 3ds modding Scene around 2015-2016) and the rest is history. I'm an avid modder of Nintendo
+			and Playstation handhelds and consoles. So far, I'm modded a bunch of 3DS systems, a couple of Nintendo Switches, Wii's and Wii U, a PSP
+			3000, and a PS Vita.
+		</p>
+		<a class="end" id="link" href="about.php">Learn more about me</a>
+	</div>
+	<div class="block-text">
+		<h1 class="new-line">A Hopeful Full Stack Developer in the Making!</h1>
+		<p class="new-line indent">
+			At the moment, I've made a bunch of web applications using LAMP, Django, Angular + Nest.js, and React. Some that use a database, like the
+			LAMP version of ChessWeb which was my final for my database class which I have rewritten to use the Django framework (uses SQLite). I'vs
+			also worked on both PHP and Angular apps via my internships at RanLife and Ken Garff Automotive respectively.
+		</p>
+		<p class="new-line indent">
+			Aside from just web development, I've worked on applications using Java, Python, C/C++, Rust, PHP, and other languages briefly like
+			Clojure, Scala, Pascal, and Haskell to name a few. I've set up and maintained linux servers running Appache, Ubuntu, and Red Hat. I've
+			also worked with raspberry pi (doing SMS texting with python scripts) and Arduino boards with robotics. I've dabbled in Blender and Fusion
+			360 for creating 3D models that I print out.
+		</p>
+		<p class="new-line indent">
+			I'm hoping to also dive into other niche projects like Godot Game Development or other random projects I spin up every month of so.
+		</p>
+	</div>
 </div>
 <h1 class="block-container-heading center">Some of My Skills</h1>
 <div class="block-container-list">
-  <div class="block-text">
-    <h2 class="new-line">Languages</h2>
-    <ul>
-      <li>Python</li>
-      <li>Java</li>
-      <li>Rust</li>
-      <li>Javascript/Typescript</li>
-      <li>C/C++</li>
-      <li>PHP</li>
-    </ul>
-  </div>
-  <div class="block-text">
-    <h2 class="new-line">Frameworks and Libraries</h2>
-    <ul>
-      <li>Django</li>
-      <li>React</li>
-      <li>Angular</li>
-      <li>NestJS</li>
-      <li>jQuery</li>
-      <li>ChartJS</li>
-      <li>ThreeJS</li>
-      <li>Deno</li>
-      <li>FastAPI</li>
-      <li>Jest</li>
-      <li>Numpy</li>
-      <li>Sympy</li>
-      <li>Pandas</li>
-      <li>Matplotlib</li>
-    </ul>
-  </div>
-  <div class="block-text">
-    <h2 class="new-line">Databases</h2>
-    <ul>
-      <li>MySQL</li>
-      <li>SQLite</li>
-      <li>Snowflake</li>
-    </ul>
-  </div>
+	<div class="block-text">
+		<h2 class="new-line">Languages</h2>
+		<ul>
+			<li>Python</li>
+			<li>Java</li>
+			<li>Rust</li>
+			<li>Javascript/Typescript</li>
+			<li>C/C++</li>
+			<li>PHP</li>
+		</ul>
+	</div>
+	<div class="block-text">
+		<h2 class="new-line">Frameworks and Libraries</h2>
+		<ul>
+			<li>Django</li>
+			<li>React</li>
+			<li>Angular</li>
+			<li>NestJS</li>
+			<li>jQuery</li>
+			<li>ChartJS</li>
+			<li>ThreeJS</li>
+			<li>Deno</li>
+			<li>FastAPI</li>
+			<li>Jest</li>
+			<li>Numpy</li>
+			<li>Sympy</li>
+			<li>Pandas</li>
+			<li>Matplotlib</li>
+		</ul>
+	</div>
+	<div class="block-text">
+		<h2 class="new-line">Databases</h2>
+		<ul>
+			<li>MySQL</li>
+			<li>SQLite</li>
+			<li>Snowflake</li>
+		</ul>
+	</div>
 </div>
 <div class="block-text center new-line">
-  <button onclick="window.open('https://github.com/MakennaWorley','_blank');" class="external-social-button" id="github-button">
-    <img src="images/github.png" alt="github icon" class="external-social-icon" />
-    MakennaWorley
-  </button>
+	<button onclick="window.open('https://github.com/MakennaWorley','_blank');" class="external-social-button" id="github-button">
+		<img src="images/github.png" alt="github icon" class="external-social-icon" />
+		MakennaWorley
+	</button>
 </div>
 <h1 class="center">Contact Me!</h1>
 <div class="block-container">
-  <div class="block-text center">
-    <button onclick="window.open('https://www.linkedin.com/in/makenna-worley', '_blank');" class="external-social-button" id="linked-button">
-      <img src="images/LinkedIn.png" alt="LinkedIn icon" class="external-social-icon" />
-      makenna-worley
-    </button>
-  </div>
+	<div class="block-text center">
+		<button onclick="window.open('https://www.linkedin.com/in/makenna-worley', '_blank');" class="external-social-button" id="linked-button">
+			<img src="images/LinkedIn.png" alt="LinkedIn icon" class="external-social-icon" />
+			makenna-worley
+		</button>
+	</div>
 </div>

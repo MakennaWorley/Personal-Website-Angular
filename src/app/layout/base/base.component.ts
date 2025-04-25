@@ -6,9 +6,9 @@ import { HeaderComponent } from '../../components/header/header.component';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 
 @Component({
-  selector: 'app-base',
-  imports: [RouterOutlet, FooterComponent, HeaderComponent, NavbarComponent],
-  templateUrl: './base.component.html',
-  styleUrl: './base.component.scss',
+	selector: 'app-base',
+	imports: [RouterOutlet, FooterComponent, HeaderComponent, NavbarComponent],
+	templateUrl: './base.component.html',
+	styleUrl: './base.component.scss'
 })
 export class BaseComponent {}

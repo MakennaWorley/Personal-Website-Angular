@@ -4,7 +4,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { WestminsterProjectsComponent } from './westminster-projects.component';
 
 @NgModule({
-  imports: [CommonModule, CarouselComponent, WestminsterProjectsComponent],
-  exports: [WestminsterProjectsComponent],
+	imports: [CommonModule, CarouselComponent, WestminsterProjectsComponent],
+	exports: [WestminsterProjectsComponent]
 })
 export class WestminsterProjectsModule {}
