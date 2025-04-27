@@ -4,7 +4,13 @@
 	justify-content: center;
 	white-space: nowrap;
 	width: 100%;
-	/*background-color: #FCFCFC; for dark mode*/
+	// background-color: #FCFCFC; // for dark mode
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+		height: auto;
+		padding: 1rem 0;
+	}
 }
 
 .banner {
@@ -12,37 +18,22 @@
 	gap: 1rem;
 	padding: 0.5rem 0;
 	overflow: hidden;
-	/*animation: scrollLogo 10s linear infinite;*/
-}
+	// animation: scrollLogo 10s linear infinite;
 
-.banner img {
-	display: inline-block;
-	height: 2rem;
-	width: auto;
-	white-space: nowrap;
-	max-width: 100%;
-}
+	img {
+		display: inline-block;
+		height: 2rem;
+		width: auto;
+		white-space: nowrap;
+		max-width: 100%;
 
-@media screen and (max-width: 768px) {
-	banner-container {
-		flex-direction: column;
-		height: auto;
-		padding: 1rem 0;
+		@media screen and (max-width: 768px) {
+			height: 1.5rem;
+		}
 	}
 
-	.banner {
+	@media screen and (max-width: 768px) {
 		flex-direction: column;
-		gap: 0.5rem;
 		align-items: center;
 	}
-
-	.banner img {
-		height: 1.5rem;
-	}
 }
-
-/* Not super happy with this right now
-@keyframes scrollLogo {
-  from { transform: translateX(10%); }
-  to { transform: translateX(-100%); }
-}*/
