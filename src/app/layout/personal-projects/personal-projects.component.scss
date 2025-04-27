@@ -1,0 +1,21 @@
+@import '../../../variables.scss';
+
+.project {
+	margin: 4rem 0;
+	padding: 2rem;
+	background-color: $blue-white;
+	border-radius: 0.5rem;
+	border-color: $blue-info;
+	width: 90%;
+	box-shadow: 0 4px 10px $grey-dark;
+}
+
+.project h1,
+h2 {
+	margin-bottom: 1rem;
+}
+
+.project p {
+	margin-bottom: 1rem;
+	line-height: 1.6;
+}

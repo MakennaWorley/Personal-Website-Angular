@@ -1,79 +1,150 @@
-<div class="center">
-	<div class="block-text">
-		<h1 class="new-line">From Scratch Database: A Rust recreation of a SQL Database</h1>
-		<p class="new-line">
-			This is a side project I spun up on a weekend after deciding it would be fun to recreate a database in Rust to not only improve my own
-			Rust coding ability but also learn how SQL databases work! The final goal is to have this project able to do anything a regular SQL
-			database can do, but this uses .csv files at the moment (I might look into how SQL stores data to recreate that too). But I might also add
-			in some custom functions for any future projects or have some SQL injection protection built in. Who knows!
-		</p>
-		<p class="new-line"></p>
-		<button
-			onclick="window.open('https://github.com/MakennaWorley/From-Scratch-Database-Rust','_blank');"
-			class="external-social-button"
-			id="github-button"
-		>
-			<img src="images/github.png" alt="github icon" class="external-social-icon" />
-			Link to GitHub Repo
-		</button>
-		<p class="new-line"></p>
+<div class="center-content">
+	<div class="block-text center-content">
+		<div class="project">
+			<h1>From Scratch Database: A Rust recreation of a SQL Database</h1>
+			<h2>Rust, SQL, Algorithms, System Design</h2>
+			<p>
+				I was looking for a new project to work on after ChessWeb finished and decided that reconstructing an SQL database from scratch would
+				be an amazing start. Especially given how important optimal queries are with Data Science. My final goal for this project is to have
+				SQL fully reconstructed in Rust so that I could use my custom RSQL database in any future projects. At the moment I'm using .csv files
+				which are not optimal so I will be looking into better storage methods for whole the database and might even integrate some SQL
+				injection protection after I finish getting the core functionality finished.
+			</p>
+			<p>
+				The largest challenge with this project is learning the SQL database at a deeper level. I know how SQL works as in how to query the
+				database but actually figuring out how to make all those operations work as expected is very different. Especially given that all
+				queries can use a number of different functions such as aggregating and joining tables, plus it needs to be decently fast. So this is
+				a challenge pushing my algorithmic knowledge as I look for ways to streamline my database query system.
+			</p>
+			<p>All the code for this project is in Rust making use of the rust packages:</p>
+			<div class="begin">
+				<!-- this is weirdly formated -->
+				<ul>
+					<li>reedline</li>
+					<li>csv</li>
+					<li>serde</li>
+					<li>sqlparser</li>
+					<li>thiserror</li>
+					<li>chrono</li>
+					<li>prettytable</li>
+					<li>colored</li>
+				</ul>
+			</div>
+			<p>
+				Going forward, I plan on using this custom RSQL (Rust SQL) database in future projects given the custom functionality. I'm also
+				planning on keeping the codebase for this open-source so that anyone can help improve RSQL and maybe it becomes the new goto database.
+			</p>
+			<button
+				onclick="window.open('https://github.com/MakennaWorley/From-Scratch-Database-Rust','_blank');"
+				class="external-social-button"
+				id="github-button"
+			>
+				<img src="images/github.png" alt="github icon" class="external-social-icon" />
+				Link to GitHub Repo
+			</button>
+		</div>
 
-		<h1 class="new-line">ChessWeb: A Chess Rating and Pairing System</h1>
-		<p class="new-line">
-			This is a custom made Django web application that was designed from the ground up to save around 4+ hours a week by automating the process
-			of updating ratings and pairing the student in Oakwood Elementary's Chess Club students. This program usings a greedy algorithm for
-			pairing the players based on their rating and previous opponents.
-		</p>
-		<p class="new-line">
-			Currently, the first prerelease is out on my GitHub! It requires the user to know how to start up a Django python project and has limited
-			functionality. I plan on finishing up the full functionality soon! When it is published for release, I'll also make an announcement on my
-			LinkedIn and have an installation guide for getting the project set up on your own machine.
-		</p>
-		<p class="new-line"></p>
-		<button
-			onclick="window.open('https://github.com/MakennaWorley/Chess-Website-Django','_blank');"
-			class="external-social-button"
-			id="github-button"
-		>
-			<img src="images/github.png" alt="github icon" class="external-social-icon" />
-			Link to GitHub Repo
-		</button>
-		<p class="new-line"></p>
+		<div class="project">
+			<h1>ChessWeb: A Chess Rating and Pairing System</h1>
+			<h2>Django, SQLite, Web Development, Data Modeling</h2>
+			<p>
+				Volunteering at Oakwood Elementary's Chess Club made it apparent that there is no software that is freely available for clubs to use
+				to 1) store their player information such as name, rating, parent contact, etc and 2) pair the players with an algorithm which is
+				commonly used in tournaments. Therefore I recreated a PHP version of this (minus the pairing system) for my final for Databases, but I
+				needed to add the pairing algorithm and given I was liking the Django framework I decided to move the project from PHP to Django.
+				Thus, ChessWeb was born - currently in pre-release version 1.1.
+			</p>
+			<p>
+				The largest challenge with this project is trying to keep all the tasks on schedule and constantly making improvements to the entire
+				codebase. Since as I use the code to do the pairings and ratings, I find bugs which get patched only to discover more bugs and thus it
+				seems like a never ending cycle. I also constantly need to keep the scope of the project in mind since I have many ideas for this
+				project but I also need to get it done. At the moment, there are only 2 or 3 outstanding features I need to finish before I can mark
+				this as a full release (via a docker container). But eventually this will become a web app open to any chess club.
+			</p>
+			<p>
+				This uses the Django framework for the codebase with vanilla JS. I might transition this to TS since I really want the strong typing
+				of typescript moving forward but my first priority is getting the project into a full release.
+			</p>
+			<p>
+				Even in the pre-released version of this application, my code saves 4+ hours a week of the director's time which was spent manually
+				updating the ratings and pairing the students. While the code does a good enough job at getting the majority of the pairings done, the
+				director does have to go over them and make any adjustments. My end goal is to get this code on the web and open for any club to use.
+			</p>
+			<button
+				onclick="window.open('https://github.com/MakennaWorley/Chess-Website-Django','_blank');"
+				class="external-social-button"
+				id="github-button"
+			>
+				<img src="images/github.png" alt="github icon" class="external-social-icon" />
+				Link to GitHub Repo
+			</button>
+		</div>
 
-		<h1 class="new-line">3D Visualizer: Differential Equations Visualizer</h1>
-		<p class="new-line">
-			Built using Three.js, this code uses Euler and Runge Kutta 4 to approximate the system of equations (prey and predator by default). This
-			shows both the table for the values and either 3D or 2D graphs depending on the angle the user wants to view the graph. Built at a final
-			project for Differential Equations with Brynlee Thain. This code contains either the js version meant for running locally or on the server
-			and a python script to view locally.
-		</p>
-		<p class="new-line"></p>
-		<a class="end" id="link" href="/3d" target="_blank">Visit Web Version</a>
-		<p class="new-line"></p>
-		<button
-			onclick="window.open('https://github.com/MakennaWorley/3D-Visualization-Plotter-JSPython','_blank');"
-			class="external-social-button"
-			id="github-button"
-		>
-			<img src="images/github.png" alt="github icon" class="external-social-icon" />
-			Link to GitHub Repo
-		</button>
-		<p class="new-line"></p>
+		<div class="project">
+			<h1>3D Visualizer: Differential Equations Visualizer</h1>
+			<h2>Javascript, Three.js, Data Modeling, Web Development</h2>
+			<p>
+				In my differiential equations class we used a free geogebra tool which was extremely slow and really clunky (in my opinion) and thus I
+				decided that I could build a better version of it. Thus my 3D Visualizer was born. It as all the features of the original tool we used
+				but it feels much more modernized and works much faster. So it can perform either Euler or Runge Kutta 4 approximations on ODE systems
+				of equations (defaulting to prey-predator equations), show the table with all the calculated values, and show various perspectives of
+				the graph.
+			</p>
+			<p>
+				The largest challenge with this project was getting the graph to display properly since the graphs actually have to flatten when
+				looking at the graph from certain points of view. Thus the code changes from a 3d representation of the graph to a 2d version. Another
+				issue was making sure the mobile version works while making sure the user experience is as nice as the desktop version.
+			</p>
+			<p>
+				This only uses Three.js for the graph and everything else is handled by JS which means this renders client-side which helps lower the
+				impact on my server.
+			</p>
+			<p>
+				I'm hopeful that the math community will use this project in the future for any 3D visualizing of systems (even if my code is
+				currently really limited). It's all open-source so anyone can take my code and make it much better!
+			</p>
+			<p>
+				<a class="end" id="link" href="/3d" target="_blank">Visit Web Version</a>
+			</p>
+			<button
+				onclick="window.open('https://github.com/MakennaWorley/3D-Visualization-Plotter-JSPython','_blank');"
+				class="external-social-button"
+				id="github-button"
+			>
+				<img src="images/github.png" alt="github icon" class="external-social-icon" />
+				Link to GitHub Repo
+			</button>
+		</div>
 
-		<h1 class="new-line">Card Games: Texas Hold'em</h1>
-		<p class="new-line">
-			Just a silly project I spun up to see if I could get my computer to play Texas Hold'em and test if a random player is better than Alpha
-			Beta Pruning or Minimax Players.
-		</p>
-		<p class="new-line"></p>
-		<button
-			onclick="window.open('https://github.com/MakennaWorley/Card-Games-Python','_blank');"
-			class="external-social-button"
-			id="github-button"
-		>
-			<img src="images/github.png" alt="github icon" class="external-social-icon" />
-			Link to GitHub Repo
-		</button>
-		<p class="new-line"></p>
+		<div class="project">
+			<h1>Card Games: Texas Hold'em</h1>
+			<h2>Python, Unit Testing, Test Driven Development</h2>
+			<p>
+				I wanted to practice what I had learned in my AI class so I recreated Texas Hold'em in python with different players: random, human,
+				alpha-beta pruning, and minimax. This is more of a silly project I spun up on a weekend as a weekend project to give myself something
+				to do.
+			</p>
+			<p>
+				The largest challenge with this project was making sure the hand ranks were properly calculated which meant a lot of python unit
+				testing which I haven't done a ton of. I learned a lot about test driven development which allows me to quickly make sure all my code
+				works as expected.
+			</p>
+			<p>
+				This project is purely built with Python using a couple of functions from: itertools, collections, pandas, unittest, math, and random.
+				I might rewrite this code to use only my code and no external libraries.
+			</p>
+			<p>
+				While this project was primarily a weekend challenge for fun, it sharpened my skills in implementing AI strategies and test-driven
+				development.
+			</p>
+			<button
+				onclick="window.open('https://github.com/MakennaWorley/Card-Games-Python','_blank');"
+				class="external-social-button"
+				id="github-button"
+			>
+				<img src="images/github.png" alt="github icon" class="external-social-icon" />
+				Link to GitHub Repo
+			</button>
+		</div>
 	</div>
 </div>

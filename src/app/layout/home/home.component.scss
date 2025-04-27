@@ -17,3 +17,16 @@
 	justify-content: center;
 	height: 100%;
 }
+
+#resume-button {
+	background-color: $blue-primary;
+	color: $blue-white;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+
+	&:hover {
+		color: $blue-primary;
+		background-color: $blue-white;
+	}
+}
