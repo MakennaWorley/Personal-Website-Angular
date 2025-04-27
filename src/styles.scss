@@ -3,6 +3,7 @@
 * {
 	font-size: 20px;
 	margin: 0;
+	font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
 }
 
 html {
@@ -23,12 +24,19 @@ body {
 
 h1 {
 	color: $blue-primary;
-	font-size: 1.5rem;
+	font-size: 2.5rem;
+	font-weight: 700;
 }
 
 h2 {
 	color: $blue-dark;
+	font-size: 1.75rem;
+	font-weight: 600;
+}
+
+p {
 	font-size: 1rem;
+	line-height: 1.25;
 }
 
 em {

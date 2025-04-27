@@ -2,7 +2,7 @@
 $blue-light: #c8e1f4;
 $blue-white: #fcfcfc;
 $blue-dark: #04365d;
-$blue-primary: #1f6193;
+$blue-primary: #2a6ebd;
 $blue-secondary: #4b86b4;
 $blue-info: #81b6df;
 
@@ -13,6 +13,11 @@ $grey-medium: #979593;
 $grey-medium-light: #d6d2d7;
 
 // Accents
-$accent-1: #370c5a;
-$accent-2: #e84058;
-$accent-3: #04524f;
+$accent-1: #521287;
+$accent-2: #04524f;
+
+// New Background Color for Section Breaks
+$section-background: #f7f9fc; // Very light blueish grey
+
+// Slightly richer blue for links on hover
+$blue-hover: #2a6ebd;

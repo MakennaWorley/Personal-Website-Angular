@@ -4,12 +4,16 @@
 	box-sizing: border-box;
 }
 
+h2 {
+	font-size: 1.5rem;
+}
+
 .timeline {
 	position: relative;
 	margin: 0 auto;
 	padding-top: 4rem;
 	padding-bottom: 4rem;
-	max-width: 1200px;
+	max-width: 1400px;
 
 	&::after {
 		content: '';
@@ -86,7 +90,7 @@
 .content {
 	padding: 20px 30px;
 	background-color: $blue-white;
-	border: 0.25rem solid $blue-dark;
+	border: 0.25rem solid $accent-2;
 	position: relative;
 	border-radius: 3rem;
 
