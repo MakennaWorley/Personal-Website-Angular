@@ -5,7 +5,7 @@
 		<img src="images/headshot2024.jpg" alt="A photo of me taken July 2024" id="profilePhoto" />
 	</div>
 	<div class="block-text">
-		<h2 class="new-line">Westminster University Class of '26, Honors Student in Computer Science, Data Science, and Mathematics</h2>
+		<h2 class="new-line">Westminster University Class of '26, Honors Student, studying Computer Science, Data Science, and Mathematics</h2>
 		<p class="new-line indent">
 			I'm a current student at Westminster University studying Computer Science, Data Science, and Mathematics. I am also part of the Honors
 			College, the First Scholars (First Generation College Student) program, and have been on the Dean's List for all five of my semesters.
@@ -16,9 +16,9 @@
 			Undergraduate Research Assistant.
 		</p>
 		<p class="new-line indent">
-			I also volunteer at Oakwood Elementary's Chess Club as an instructor and Co-Director. There, I sometimes run the club and manage all of
-			the student volunteers. I have also been working on ChessWeb to automate updating ratings and pairings, which saves 4+ hours a week of the
-			director's time.
+			I also volunteer at my local elementary school's chess club as an instructor and Co-Director. There, I sometimes run the club and manage
+			all of the student volunteers. I have also been working on ChessWeb to automate updating ratings and pairings, which saves 4+ hours a week
+			of the director's time.
 		</p>
 		<p class="new-line indent">
 			I have also had the amazing opportunity to compete in HackUSU 2025 in the Datathon category where my teammates and I took 1st place! I've
@@ -43,52 +43,31 @@
 		<h1 class="center new-line">Some Things I've Worked On / Am Working On Independently</h1>
 		<h2 class="center new-line">These are just a couple of my projects — my GitHub is most likely up to date with my latest activity.</h2>
 		<ul>
-			<li>This website! The original version used PHP, but I have since rewritten the codebase to use Angular!</li>
 			<li>
-				From Scratch Database: A recreation of a SQL database using Rust to create, read, update, and delete from CSV files. I'm aiming to
-				have this database do almost anything a SQL database can do, including but not limited to full joins, aggregations, SQL math,
-				aliasing, and transactions. Possibly even more functions that I may or may not need in some upcoming projects.
+				I first started my journey with computer science by building a simple website, which later turned into version 1.0.0 of this website.
+				It was completely built in PHP without any file structure (no CodeIgniter or Laravel), just vanilla PHP. Since working at Ken Garff,
+				where all development is done with Angular and Nest.js, I rebuilt this website to use Angular. Currently, this is hosted on a
+				DigitalOcean droplet with Apache/Ubuntu.
 			</li>
-			<div class="new-line center">
-				<button
-					onclick="window.open('https://github.com/MakennaWorley/From-Scratch-Database-Rust','_blank');"
-					class="external-social-button"
-					id="github-button"
-				>
-					<img src="images/github.png" alt="github icon" class="external-social-icon" />
-					Link to GitHub Repo
-				</button>
-			</div>
 			<li>
-				ChessWeb: A Django web app for Oakwood Elementary's Chess Club that uses a SQLite database to hold player information such as their
-				name and rating (ELO). This program uses a greedy algorithm to pair players based on their ratings and updates their ratings based on
-				the results of their previous games. You can find the code on my GitHub — it's in pre-release!
+				For my 2025 summer project, I'm working on a Rust Improved of SQL (RISQL), which aims to do everything a SQL database can do while
+				also allowing me to implement custom features like encryption and SQL injection protection. As this project is in early development,
+				you can follow my progress on GitHub. I'm hopeful that I can get RISQL finished by the end of summer, giving me time to make
+				improvements and fix any bugs I find.
 			</li>
-			<div class="new-line center">
-				<button
-					onclick="window.open('https://github.com/MakennaWorley/ChessWeb-Django','_blank');"
-					class="external-social-button"
-					id="github-button"
-				>
-					<img src="images/github.png" alt="github icon" class="external-social-icon" />
-					Link to GitHub Repo
-				</button>
-			</div>
 			<li>
-				3D Visualizer: A 3D plotter for prey-predator equations, using Three.js to approximate the populations with either Euler's Method or
-				Runge-Kutta 4. This was completed as my final project with Brynlee Thain for our Differential Equations class! You can either visit
-				GitHub for the source code or <a class="end" id="link" href="/3d" target="_blank">go to the web version</a>.
+				Due to my work as Co-Director at my local elementary school's chess club, I wanted to create chess ratings and pairings software which
+				would save the director or volunteer doing the ratings and pairings up to 4 hours weekly. Thus, I made ChessWeb. There are two
+				versions of ChessWeb: the one built with LAMP as my final project for my databases class (a simple CRUD application), but it lacked
+				the pairing algorithm. As an improvement on ChessWeb 1.0, I built ChessWeb 2.0, which uses the Django framework. Currently, this code
+				is in pre-release, and I'm planning to get it fully deployed for my local club by the end of May 2025.
 			</li>
-			<div class="new-line center">
-				<button
-					onclick="window.open('https://github.com/MakennaWorley/3D-Visualization-Plotter-JSPython','_blank');"
-					class="external-social-button"
-					id="github-button"
-				>
-					<img src="images/github.png" alt="github icon" class="external-social-icon" />
-					Link to GitHub Repo
-				</button>
-			</div>
+			<li>
+				I created this 3D Visualizer for my differential equations class after finding the original tool to be rather slow and clunky.
+				Although this tool cannot yet evaluate fractions, sines, or cosines, it works well for giving either Euler or Runge-Kutta 4
+				approximations for predator-prey systems of equations. You can visit the web version
+				<a class="end" id="link" href="/3d" target="_blank">here</a>.
+			</li>
 			<a class="end" id="link" href="/personal">Learn more about my personal projects</a>
 		</ul>
 	</div>
@@ -98,15 +77,15 @@
 	<div class="block-text">
 		<h1 class="new-line">Chess and Video Games</h1>
 		<p class="new-line indent">
-			I believe what got me into Computer Science was truly my love for video games. I grew up playing chess at my local elementary's chess club
-			when I was around 8 (I had started playing at 5), which then spiraled into my parents encouraging me to play other educational games. I
-			vividly remember playing a submarine game where you had to solve math problems to progress.
+			I believe what got me into computer science was truly my love for video games. I grew up playing chess at my local elementary school's
+			chess club when I was around 8 (I had started playing at 5), which then spiraled into my parents encouraging me to play other educational
+			games. I vividly remember playing a submarine game where you had to solve math problems to progress.
 		</p>
 		<p class="new-line indent">
-			After a bit of begging, they gave in and I was just playing regular old video games like Mario Kart. I would spend hours grinding away in
-			Pokémon (which then led me to discover the 3DS modding scene around 2015–2016), and the rest is history. I'm an avid modder of Nintendo
-			and PlayStation handhelds and consoles. So far, I've modded a bunch of 3DS systems, a couple of Nintendo Switches, Wii and Wii U consoles,
-			a PSP 3000, and a PS Vita.
+			After a bit of begging, they gave in, and I was just playing regular old video games like Mario Kart. I would spend hours grinding away in
+			Pokémon (which then led me to discover the 3DS modding scene in 2015–2016), and the rest is history. I'm an avid modder of Nintendo and
+			PlayStation handhelds and consoles. So far, I've modded a bunch of 3DS systems, a couple of Nintendo Switches, Wii and Wii U consoles, a
+			PSP 3000, and a PS Vita.
 		</p>
 		<a class="end" id="link" href="/about">Learn more about me</a>
 	</div>
@@ -115,14 +94,14 @@
 		<h1 class="new-line">A Hopeful Full Stack Developer in the Making!</h1>
 		<p class="new-line indent">
 			At the moment, I've built a bunch of web applications using LAMP, Django, Angular + Nest.js, and React. Some of them use a database, like
-			the LAMP version of ChessWeb, which was my final for my database class (later rewritten in Django using SQLite). I've also worked on both
+			the LAMP version of ChessWeb, which was my database class final project (later rebuilt in Django using SQLite). I've also worked on both
 			PHP and Angular apps via my internships at RanLife and Ken Garff Automotive, respectively.
 		</p>
 		<p class="new-line indent">
 			Beyond web development, I've worked on applications using Java, Python, C/C++, Rust, PHP, and briefly explored other languages like
-			Clojure, Scala, Pascal, and Haskell. I've set up and maintained Linux servers running Apache, Ubuntu, and Red Hat. I've also worked with
-			Raspberry Pi (doing SMS texting with Python scripts) and Arduino boards with robotics. I’ve dabbled in Blender and Fusion 360 for creating
-			3D models that I print out.
+			Clojure, Scala, Pascal, and Haskell. I've set up and maintained Linux servers running Ubuntu and Red Hat. I've also worked with Raspberry
+			Pi (doing SMS texting with Python scripts) and Arduino boards with robotics. I’ve dabbled in Blender and Fusion 360 for creating 3D models
+			that I print out on FDM printers.
 		</p>
 		<p class="new-line indent">
 			I'm hoping to also dive into other niche projects like Godot game development or other random projects I spin up every month or so.
@@ -139,38 +118,45 @@
 			<li>Python</li>
 			<li>Java</li>
 			<li>Rust</li>
-			<li>JavaScript/TypeScript</li>
-			<li>C/C++</li>
+			<li>JavaScript / TypeScript</li>
+			<li>C / C++</li>
 			<li>PHP</li>
 		</ul>
 	</div>
 
 	<div class="block-text">
-		<h2 class="new-line">Frameworks and Libraries</h2>
+		<h2 class="new-line">Web Frameworks</h2>
 		<ul>
 			<li>Django</li>
 			<li>React</li>
 			<li>Angular</li>
-			<li>NestJS</li>
+			<li>Nest.js</li>
 			<li>jQuery</li>
-			<li>Chart.js</li>
-			<li>Three.js</li>
+			<li>Node.js</li>
 			<li>Deno</li>
-			<li>FastAPI</li>
-			<li>Jest</li>
-			<li>NumPy</li>
-			<li>SymPy</li>
-			<li>Pandas</li>
-			<li>Matplotlib</li>
 		</ul>
 	</div>
 
 	<div class="block-text">
-		<h2 class="new-line">Databases</h2>
+		<h2 class="new-line">Data Science / Machine Learning Libraries</h2>
+		<ul>
+			<li>NumPy</li>
+			<li>SymPy</li>
+			<li>Pandas</li>
+			<li>Matplotlib</li>
+			<li>Anaconda</li>
+			<li>Chart.js</li>
+			<li>Three.js</li>
+		</ul>
+	</div>
+
+	<div class="block-text">
+		<h2 class="new-line">Databases and ORMs</h2>
 		<ul>
 			<li>MySQL</li>
 			<li>SQLite</li>
 			<li>Snowflake</li>
+			<li>Prisma</li>
 		</ul>
 	</div>
 </div>
