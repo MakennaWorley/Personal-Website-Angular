@@ -49,8 +49,6 @@ export class CarouselComponent implements OnChanges, AfterViewInit {
 	}
 
 	changeItem(direction: number): void {
-		if (this.animating) return;
-
 		if (this.items.length === 0) return;
 		else if (this.items.length < 3) {
 			this.items[this.current].active = false;
