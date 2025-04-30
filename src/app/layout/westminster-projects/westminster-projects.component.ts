@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselComponent } from '../../components/carousel/carousel.component';
 
 @Component({
 	selector: 'app-westminster-projects',
@@ -10,6 +10,41 @@ import { CarouselComponent } from './carousel/carousel.component';
 	styleUrl: './westminster-projects.component.scss'
 })
 export class WestminsterProjectsComponent {
+	testingProjects = [
+		{
+			title: 'Project 1',
+			active: false
+		},
+		{
+			title: 'Project 2',
+			active: true
+		},
+		{
+			title: 'Project 3',
+			active: false
+		},
+		{
+			title: 'Project 4',
+			active: false
+		},
+		{
+			title: 'Project 5',
+			active: false
+		},
+		{
+			title: 'Project 6',
+			active: false
+		},
+		{
+			title: 'Project 7',
+			active: false
+		},
+		{
+			title: 'Project 8',
+			active: false
+		}
+	];
+
 	pythonProjects = [
 		{
 			title: 'Convex Hull',
@@ -18,13 +53,13 @@ export class WestminsterProjectsComponent {
 				'Our final for CMPT306 was to use different algorithms to solve a problem, I chose to work on convex hulls due to their use in Math and Data Science',
 				'notebook or presentation'
 			],
-			active: true
+			active: false
 		},
 		{
 			title: 'Matrix Encryption',
 			subtitle: 'Final for MATH 362: Topics in Applied Mathematics<br/>Fall 2024',
 			paragraphs: ['Worked with Nic van der Werf to see if we can use Matrics to encrypt data', 'notebook'],
-			active: false
+			active: true
 		},
 		{
 			title: 'Pacman',

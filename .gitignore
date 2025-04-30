@@ -42,6 +42,7 @@ testem.log
 Thumbs.db
 
 .env
+src/environments/*
 public/
 angular_commands.txt
 favicon_io/

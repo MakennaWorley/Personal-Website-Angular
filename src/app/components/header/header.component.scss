@@ -34,7 +34,14 @@ header {
 	#headerText {
 		font-size: 3rem;
 		color: $blue-white;
-		padding: 3rem 0;
+		padding-top: 3rem;
+		text-align: center;
+	}
+
+	p {
+		font-size: 1.25rem;
+		color: $blue-white;
+		padding-bottom: 3rem;
 		text-align: center;
 	}
 }
