@@ -13,6 +13,17 @@ export class WestminsterProjectsComponent {
 	testingProjects = [
 		{
 			title: 'Project 1',
+			paragraphs: [
+				'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.',
+
+				'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.',
+
+				'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.',
+
+				'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.',
+
+				'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.'
+			],
 			active: false
 		},
 		{
@@ -50,16 +61,22 @@ export class WestminsterProjectsComponent {
 			title: 'Convex Hull',
 			subtitle: 'Final project for CMPT 306: Algorithms<br/>Fall 2024',
 			paragraphs: [
-				'Our final for CMPT306 was to use different algorithms to solve a problem, I chose to work on convex hulls due to their use in Math and Data Science',
-				'notebook or presentation'
+				'Our final for CMPT306 was to use different algorithms to solve a problem, I chose to work on convex hulls due to their use in Math and Data Science notebook or presentation'
 			],
 			active: false
+		},
+		{
+			title: 'Zen Spelling',
+			subtitle: 'Project for CMPT 322: Software Engineering<br/>Spring 2024',
+			paragraphs: ['stuff'],
+			iframeSrc: ['https://www.youtube.com/embed/PwMn_Tok4tU?si=pNk5cS5Cie10BEA3'],
+			active: true
 		},
 		{
 			title: 'Matrix Encryption',
 			subtitle: 'Final for MATH 362: Topics in Applied Mathematics<br/>Fall 2024',
 			paragraphs: ['Worked with Nic van der Werf to see if we can use Matrics to encrypt data', 'notebook'],
-			active: true
+			active: false
 		},
 		{
 			title: 'Pacman',

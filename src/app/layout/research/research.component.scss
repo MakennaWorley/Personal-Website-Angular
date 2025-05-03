@@ -3,3 +3,16 @@
 .project {
 	box-shadow: 0 4px 10px $accent-1;
 }
+
+#link-button {
+	background-color: $accent-1;
+	color: $blue-white;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+
+	&:hover {
+		color: $accent-1;
+		background-color: $blue-white;
+	}
+}

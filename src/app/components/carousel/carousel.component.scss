@@ -55,14 +55,13 @@
 		transition: all 0.5s ease;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
 		text-align: center;
 		opacity: 0.5;
 		transform: scale(0.9);
 		box-sizing: border-box;
 		overflow-x: hidden;
-		justify-content: center;
+		overflow-y: auto;
 
 		h1,
 		h2,

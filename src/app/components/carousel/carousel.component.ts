@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, Input, OnChanges, QueryList, SimpleChanges, ViewChildren } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
 	selector: 'app-carousel',
@@ -17,10 +18,13 @@ export class CarouselComponent implements OnChanges, AfterViewInit {
 	current = 0;
 	itemWidth = 0;
 
+	constructor(private sanitizer: DomSanitizer) {}
+
 	@ViewChildren('carouselItem') carouselItems!: QueryList<ElementRef>;
 
 	ngOnChanges(changes: SimpleChanges): void {
 		if (changes['items'] && this.items.length > 0) {
+			this.sanitizeIframeSrcs();
 			const initialIndex = this.items.findIndex((item) => item.active);
 			this.current = initialIndex !== -1 ? initialIndex : 0;
 			this.setVisibleItems();
@@ -74,5 +78,13 @@ export class CarouselComponent implements OnChanges, AfterViewInit {
 		const offset = this.itemWidth;
 		if (this.direction === 'left') return `translateX(${offset}px)`;
 		if (this.direction === 'right') return `translateX(-${offset}px)`;
+	}
+
+	sanitizeIframeSrcs() {
+		for (const item of this.items) {
+			if (item.iframeSrc) {
+				item.iframeSrc = item.iframeSrc.map((src: string) => this.sanitizer.bypassSecurityTrustResourceUrl(src));
+			}
+		}
 	}
 }
