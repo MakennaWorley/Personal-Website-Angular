@@ -132,6 +132,14 @@
 	}
 }
 
+@media (max-width: 1650px) {
+	.carousel.two-items {
+		.carousel-item:not(.active) {
+			display: none;
+		}
+	}
+}
+
 .logo {
 	width: 50px;
 	align-self: flex-start;

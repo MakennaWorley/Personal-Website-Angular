@@ -28,6 +28,10 @@ export const routes: Routes = [
 					import('./layout/westminster-projects/westminster-projects.component').then((m) => m.WestminsterProjectsComponent)
 			},
 			{
+				path: 'posts',
+				loadComponent: () => import('./layout/posts/posts.component').then((m) => m.PostsComponent)
+			},
+			{
 				path: '**',
 				redirectTo: '',
 				pathMatch: 'full'

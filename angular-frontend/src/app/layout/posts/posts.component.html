@@ -1,0 +1,13 @@
+<p>hello</p>
+
+<mat-accordion multi>
+	<mat-expansion-panel *ngFor="let post of posts" (opened)="loadContent(post)">
+		<mat-expansion-panel-header>
+			<mat-panel-title>{{ post.title }}</mat-panel-title>
+			<mat-panel-description>{{ post.date }}</mat-panel-description>
+		</mat-expansion-panel-header>
+
+		<pre *ngIf="contentMap[post.file]">{{ contentMap[post.file] }}</pre>
+		<mat-progress-spinner *ngIf="!contentMap[post.file]" diameter="30" mode="indeterminate"></mat-progress-spinner>
+	</mat-expansion-panel>
+</mat-accordion>

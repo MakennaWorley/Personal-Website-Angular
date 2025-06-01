@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, Input, OnChanges, QueryList, SimpleChanges, ViewChildren } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, OnChanges, OnDestroy, OnInit, QueryList, SimpleChanges, ViewChildren } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
@@ -9,10 +9,11 @@ import { DomSanitizer } from '@angular/platform-browser';
 	templateUrl: './carousel.component.html',
 	styleUrl: './carousel.component.scss'
 })
-export class CarouselComponent implements OnChanges, AfterViewInit {
+export class CarouselComponent implements OnChanges, AfterViewInit, OnInit, OnDestroy {
 	@Input() items: any[] = [];
 	visibleItems: any[] = [];
 	animating = false;
+	isNarrowScreen = window.innerWidth < 1650;
 	direction: 'left' | 'right' = 'right';
 
 	current = 0;
@@ -21,6 +22,15 @@ export class CarouselComponent implements OnChanges, AfterViewInit {
 	constructor(private sanitizer: DomSanitizer) {}
 
 	@ViewChildren('carouselItem') carouselItems!: QueryList<ElementRef>;
+
+	ngOnInit(): void {
+		this.updateScreenWidth();
+		window.addEventListener('resize', this.updateScreenWidth);
+	}
+
+	ngOnDestroy(): void {
+		window.removeEventListener('resize', this.updateScreenWidth);
+	}
 
 	ngOnChanges(changes: SimpleChanges): void {
 		if (changes['items'] && this.items.length > 0) {
@@ -86,5 +96,17 @@ export class CarouselComponent implements OnChanges, AfterViewInit {
 				item.iframeSrc = item.iframeSrc.map((src: string) => this.sanitizer.bypassSecurityTrustResourceUrl(src));
 			}
 		}
+	}
+
+	updateScreenWidth = (): void => {
+		this.isNarrowScreen = window.innerWidth < 1650;
+	};
+
+	get showLeftArrow(): boolean {
+		return this.items.length > 1 && this.current > 0;
+	}
+
+	get showRightArrow(): boolean {
+		return this.items.length > 1 && this.current < this.items.length - 1;
 	}
 }
