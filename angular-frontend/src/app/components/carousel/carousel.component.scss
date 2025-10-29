@@ -2,7 +2,7 @@
 
 .carousel {
 	position: relative;
-	height: 500px;
+	height: 1000px;
 	width: 100vw;
 	max-width: 2000px;
 	background: $blue-white;
@@ -48,7 +48,7 @@
 		flex: 0 0 auto;
 		width: clamp(300px, 80%, 800px);
 		padding: 1rem;
-		height: 400px;
+		height: 900px;
 		background: $blue-white;
 		border-radius: 8px;
 		box-shadow: 0 2px 8px $grey-dark;
