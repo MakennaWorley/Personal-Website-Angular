@@ -25,7 +25,24 @@
 
 						@if (item.iframeSrc) {
 							@for (iframe of item.iframeSrc; track iframe) {
-								<iframe [src]="iframe" width="100%" height="750" frameborder="0" allowfullscreen></iframe>
+								<iframe
+									[src]="iframe"
+									frameborder="0"
+									width="960"
+									height="749"
+									allowfullscreen="true"
+									mozallowfullscreen="true"
+									webkitallowfullscreen="true"
+								></iframe>
+							}
+						}
+
+						@if (item.link) {
+							@for (l of item.link; track l) {
+								<a class="external-social-button" [href]="l" target="_blank" rel="noopener noreferrer" role="button">
+									<img src="images/github.png" alt="github icon" class="external-social-icon" />
+									GitHub: MakennaWorley
+								</a>
 							}
 						}
 					</div>
@@ -46,7 +63,24 @@
 
 						@if (item.iframeSrc) {
 							@for (iframe of item.iframeSrc; track iframe) {
-								<iframe [src]="iframe" width="100%" height="750" frameborder="0" allowfullscreen></iframe>
+								<iframe
+									[src]="iframe"
+									frameborder="0"
+									width="960"
+									height="749"
+									allowfullscreen="true"
+									mozallowfullscreen="true"
+									webkitallowfullscreen="true"
+								></iframe>
+							}
+						}
+
+						@if (item.link) {
+							@for (l of item.link; track l) {
+								<a class="external-social-button" [href]="l" target="_blank" rel="noopener noreferrer" role="button">
+									<img src="images/github.png" alt="github icon" class="external-social-icon" />
+									GitHub: MakennaWorley
+								</a>
 							}
 						}
 					</div>
