@@ -46,3 +46,4 @@ angular-frontend/src/environments/*
 public/
 angular_commands.txt
 favicon_io/
+angular-frontend/.htaccess
