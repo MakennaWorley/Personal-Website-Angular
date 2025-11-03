@@ -39,10 +39,10 @@
 
 						@if (item.link) {
 							@for (l of item.link; track l) {
-								<a class="external-social-button" [href]="l" target="_blank" rel="noopener noreferrer" role="button">
+								<button class="external-social-button" id="github-button" type="button" (click)="openLink(l)">
 									<img src="images/github.png" alt="github icon" class="external-social-icon" />
 									GitHub: MakennaWorley
-								</a>
+								</button>
 							}
 						}
 					</div>
@@ -77,10 +77,10 @@
 
 						@if (item.link) {
 							@for (l of item.link; track l) {
-								<a class="external-social-button" [href]="l" target="_blank" rel="noopener noreferrer" role="button">
+								<button class="external-social-button" id="github-button" type="button" (click)="openLink(l)">
 									<img src="images/github.png" alt="github icon" class="external-social-icon" />
 									GitHub: MakennaWorley
-								</a>
+								</button>
 							}
 						}
 					</div>

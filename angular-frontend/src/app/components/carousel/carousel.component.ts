@@ -98,6 +98,10 @@ export class CarouselComponent implements OnChanges, AfterViewInit, OnInit, OnDe
 		}
 	}
 
+	openLink(url: string): void {
+		window.open(url, '_blank', 'noopener,noreferrer');
+	}
+
 	updateScreenWidth = (): void => {
 		this.isNarrowScreen = window.innerWidth < 1650;
 	};
