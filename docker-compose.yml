@@ -1,0 +1,36 @@
+services:
+
+  backend:
+    build: ./nest-backend
+    container_name: nest-backend
+    ports:
+      - "3000:3000"
+#    depends_on:
+#      - mongo
+#      - mariadb
+    restart: unless-stopped
+
+#  mariadb:
+#    image: mariadb:11
+#    container_name: mariadb
+#    environment:
+#      MYSQL_ROOT_PASSWORD: rootpass
+#      MYSQL_DATABASE: app_db
+#      MYSQL_USER: appuser
+#      MYSQL_PASSWORD: apppass
+#    ports:
+#      - "3306:3306"
+#    volumes:
+#      - mariadb_data:/var/lib/mysql
+
+#  mongo:
+#    image: mongo:7
+#    container_name: mongodb
+#    ports:
+#      - "27017:27017"
+#    volumes:
+#      - mongo_data:/data/db
+
+#volumes:
+#  mariadb_data:
+#  mongo_data:

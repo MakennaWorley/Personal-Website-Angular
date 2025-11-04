@@ -1,0 +1,32 @@
+@import '../../../variables.scss';
+
+.profilePhotoBlock {
+	align-items: center;
+	height: 100%;
+	justify-content: center;
+}
+
+#profilePhoto {
+	border: 5px solid $accent-1;
+	border-radius: 50%;
+}
+
+.profileTextBlock {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+#resume-button {
+	background-color: $blue-primary;
+	color: $blue-white;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+
+	&:hover {
+		color: $blue-primary;
+		background-color: $blue-white;
+	}
+}

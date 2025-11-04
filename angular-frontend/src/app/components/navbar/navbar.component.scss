@@ -1,0 +1,74 @@
+@import '../../../variables.scss';
+
+nav {
+	background-color: $grey-dark;
+	color: $blue-white;
+	padding: 0.5rem;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+
+	.nav-header {
+		display: none;
+		justify-content: flex-end;
+	}
+
+	.burger {
+		font-size: 1rem;
+		background: none;
+		border: none;
+		color: $blue-white;
+		cursor: pointer;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+
+		li a {
+			color: $blue-white;
+			font-size: 1rem;
+			padding: 0.5rem;
+			text-decoration: none;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $grey-medium-light;
+				color: $grey-dark;
+				transition: background-color 0.3s ease;
+			}
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.nav-header {
+			display: flex;
+		}
+
+		ul {
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+
+		ul.open {
+			display: flex;
+		}
+
+		li {
+			width: 100%;
+			text-align: center;
+		}
+
+		li a {
+			display: block;
+			width: 100%;
+			padding: 1rem;
+		}
+	}
+}

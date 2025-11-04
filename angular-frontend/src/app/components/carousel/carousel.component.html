@@ -1,0 +1,99 @@
+<div class="carousel" [class.two-items]="items.length === 2">
+	@if (items.length > 1 && isNarrowScreen) {
+		<div class="carousel-preview blur left">
+			<button (click)="changeItem(-1)" class="prev">
+				<img src="images/left-arrow.png" alt="left arrow" />
+			</button>
+		</div>
+	}
+
+	@if (items.length > 2) {
+		<div class="carousel-viewport">
+			<div
+				class="carousel-track-moving"
+				[class.slide-left]="animating && direction === 'left'"
+				[class.slide-right]="animating && direction === 'right'"
+			>
+				@for (item of visibleItems; track item) {
+					<div #carouselItem class="carousel-item" [class.active]="item.active">
+						<h1>{{ item.title }}</h1>
+						<h2 [innerHTML]="item.subtitle"></h2>
+
+						@for (para of item.paragraphs; track para) {
+							<p>{{ para }}</p>
+						}
+
+						@if (item.iframeSrc) {
+							@for (iframe of item.iframeSrc; track iframe) {
+								<iframe
+									[src]="iframe"
+									frameborder="0"
+									width="960"
+									height="749"
+									allowfullscreen="true"
+									mozallowfullscreen="true"
+									webkitallowfullscreen="true"
+								></iframe>
+							}
+						}
+
+						@if (item.link) {
+							@for (l of item.link; track l) {
+								<button class="external-social-button" id="github-button" type="button" (click)="openLink(l)">
+									<img src="images/github.png" alt="github icon" class="external-social-icon" />
+									GitHub: MakennaWorley
+								</button>
+							}
+						}
+					</div>
+				}
+			</div>
+		</div>
+	} @else if (items.length > 0) {
+		<div class="carousel-track">
+			@for (item of items; let i = $index; track item) {
+				@if (i === current || i === (current - 1 + items.length) % items.length || i === (current + 1) % items.length) {
+					<div #carouselItem class="carousel-item" [class.active]="item.active">
+						<h1>{{ item.title }}</h1>
+						<h2 [innerHTML]="item.subtitle"></h2>
+
+						@for (para of item.paragraphs; track para) {
+							<p>{{ para }}</p>
+						}
+
+						@if (item.iframeSrc) {
+							@for (iframe of item.iframeSrc; track iframe) {
+								<iframe
+									[src]="iframe"
+									frameborder="0"
+									width="960"
+									height="749"
+									allowfullscreen="true"
+									mozallowfullscreen="true"
+									webkitallowfullscreen="true"
+								></iframe>
+							}
+						}
+
+						@if (item.link) {
+							@for (l of item.link; track l) {
+								<button class="external-social-button" id="github-button" type="button" (click)="openLink(l)">
+									<img src="images/github.png" alt="github icon" class="external-social-icon" />
+									GitHub: MakennaWorley
+								</button>
+							}
+						}
+					</div>
+				}
+			}
+		</div>
+	}
+
+	@if (items.length > 1 && isNarrowScreen) {
+		<div class="carousel-preview blur right">
+			<button (click)="changeItem(1)" class="next">
+				<img src="images/right-arrow.png" alt="right arrow" />
+			</button>
+		</div>
+	}
+</div>
