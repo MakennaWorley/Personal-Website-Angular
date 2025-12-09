@@ -63,6 +63,7 @@
 
 .panel-body.open {
 	max-height: 2000px;
+	overflow-y: scroll;
 	padding-top: 0.75rem;
 	padding-bottom: 1.75rem;
 }

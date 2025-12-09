@@ -48,7 +48,6 @@
 	color: #555;
 }
 
-/* Chevron */
 .chevron {
 	transition: transform 0.2s ease;
 	font-size: 1.25rem;
@@ -58,7 +57,6 @@
 	transform: rotate(180deg);
 }
 
-/* Collapsible body */
 .panel-body {
 	max-height: 0;
 	overflow: hidden;
@@ -67,8 +65,18 @@
 }
 
 .panel-body.open {
-	/* large enough to fit content; you can adjust */
 	max-height: 2000px;
 	padding-bottom: 1.75rem;
 	padding-top: 0.75rem;
+}
+
+.image-container {
+	text-align: center;
+	margin: 1.5rem 0;
+}
+
+.image-container img {
+	max-width: 80%;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
