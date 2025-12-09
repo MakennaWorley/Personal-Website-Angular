@@ -1,29 +1,102 @@
-<mat-accordion class="expansion-container">
-	<mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
-		<mat-expansion-panel-header>
-			<mat-panel-title> This is the expansion title </mat-panel-title>
-			<mat-panel-description> This is a summary of the content </mat-panel-description>
-		</mat-expansion-panel-header>
-		<p>This is the primary content of the panel.</p>
-	</mat-expansion-panel>
+<div class="expansion-container">
+	<app-post-panel title="Becoming an Engineer" subtitle="A personal story about how I found my path in software and data" [openByDefault]="true">
+		<div id="reflection-panel-body">
+			<section class="reflection-body">
+				<p class="new-line indent">
+					I didn’t start this semester expecting anything dramatic or crazy. I thought I’d finish my classes, keep working my internship,
+					and slowly chip away at my Computer Science/Data Science capstone — the kind of slow, steady grind that feels safe. Something that
+					I've done for the last 6 semesters.
+				</p>
 
-	<mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
-		<mat-expansion-panel-header>
-			<mat-panel-title> Self aware panel </mat-panel-title>
-			<mat-panel-description> Currently I am {{ panelOpenState() ? 'open' : 'closed' }} </mat-panel-description>
-		</mat-expansion-panel-header>
-		<p>I'm visible because I am open</p>
-	</mat-expansion-panel>
-</mat-accordion>
+				<p class="new-line indent">
+					But somewhere between drafting goals for Assignment 1 and interviewing Jesse for Assignment 3, something shifted. I started seeing
+					myself differently. Not just as a student juggling three different college "tracks", not just as someone who always raises the bar
+					with each assignment, but as an engineer in the making.
+				</p>
 
-<!--<mat-accordion multi>
-	<mat-expansion-panel *ngFor="let post of posts" (opened)="loadContent(post)">
-		<mat-expansion-panel-header>
-			<mat-panel-title>{{ post.title }}</mat-panel-title>
-			<mat-panel-description>{{ post.date }}</mat-panel-description>
-		</mat-expansion-panel-header>
+				<p class="new-line indent">
+					It really began when I wrote out my semester goals — the simple question of whether I was leaning toward software engineering or
+					data science. The answer, I thought, would come from coursework or a career quiz. Instead, it came from building something almost
+					absurdly ambitious: my own database system in Rust.
+				</p>
 
-		<pre *ngIf="contentMap[post.file]">{{ contentMap[post.file] }}</pre>
-		<mat-progress-spinner *ngIf="!contentMap[post.file]" diameter="30" mode="indeterminate"></mat-progress-spinner>
-	</mat-expansion-panel>
-</mat-accordion>-->
+				<p class="new-line indent">
+					What started as a capstone idea turned into the first time I saw myself solving a truly foundational problem. I loved the puzzle
+					of it — thinking about data storage, indexing, failure modes, the parts no one ever sees but everything depends on. It was the
+					first hint that maybe my future sits at the intersection of systems, data, and applied problem-solving.
+				</p>
+
+				<p class="indent">It was also the moment I realized:</p>
+				<p class="indent">I like hard problems.</p>
+				<p class="new-line indent">I chase them, even when they scare me a little.</p>
+
+				<p class="new-line indent">
+					Researching Carnegie Mellon’s PhD program should have clarified whether I wanted to go straight into grad school. It didn’t.
+					Instead, it revealed that what I actually want is challenge with support, not challenge for its own sake. I learned that I’m
+					excited by research and big ideas — but I’m not ready to disappear into academia just yet. I want time in industry. I want to
+					understand real systems before I disappear into theoretical ones.
+				</p>
+
+				<p class="new-line indent">And then came the interview with Jesse — the moment everything quietly clicked.</p>
+
+				<p class="new-line indent">
+					I expected job-market stories or warnings about burnout. Instead, he described something no class had put into words: the
+					difference between writing code and engineering. The first makes things work. The second makes things that last.
+				</p>
+
+				<p class="new-line indent">
+					He talked about how his team measured progress, how stability mattered more than constant output, how real engineering often means
+					testing and reviewing more than writing new features. I remember sitting there, thinking:
+				</p>
+
+				<p class="indent">This is what I want. This is how I want to build.</p>
+				<p class="indent">Not fast — but thoughtfully.</p>
+				<p class="indent">Not alone — but collaboratively.</p>
+				<p class="new-line indent">Not perfectly — but intentionally.</p>
+
+				<p class="new-line indent">
+					It suddenly made sense why my internship at Ken Garff feels like the right place to grow. I’ve already seen the difference between
+					a company that values people and one that values output. I’ve experienced the work culture that treats interns like rising
+					engineers, not temporary labor. I’ve watched how mentorship, curiosity, and trust turn tech work into something sustainable.
+				</p>
+
+				<p class="new-line indent">
+					By the time I finished the final assignment, I noticed something surprising:<br />
+					My plans didn’t radically change.<br />
+					I did.
+				</p>
+
+				<p class="new-line indent">
+					This semester taught me that my path doesn’t have to be a straight line — it can be iterative, like the systems I love to build. I
+					can start in industry, learn the architecture of real systems, and later return to school if I’m still hungry for theory. I can be
+					a full-stack engineer who thinks like a data scientist. I can build tools that support real people, not just abstract problems.
+				</p>
+
+				<p class="new-line indent">
+					I’m not trying to “pick a future” anymore.<br />
+					I’m designing one.
+				</p>
+
+				<p class="new-line indent">And for the first time, it feels like the story is starting to write itself.</p>
+			</section>
+
+			<footer class="reflection-footer">
+				<p class="new-line indent">
+					Want to see what I’m building now?
+					<a id="link" href="/projects">Check out my projects.</a>
+				</p>
+			</footer>
+		</div>
+	</app-post-panel>
+
+	<!--<app-post-panel title="My USU Hackathon Experience" subtitle="What does it take to win a Hackathon?">
+		<div id="reflection-panel-body">
+			<section class="reflection-body">
+				<p class="new-line indent">
+					I didn’t start this semester expecting anything dramatic. I thought I’d finish my classes, keep working my internship, and slowly
+					chip away at my Rust database capstone — the kind of slow, steady grind that feels safe.
+				</p>
+			</section>
+		</div>
+	</app-post-panel>-->
+</div>
