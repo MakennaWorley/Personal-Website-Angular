@@ -1,0 +1,16 @@
+<div class="panel">
+	<button class="panel-header" type="button" (click)="toggle()" [attr.aria-expanded]="isOpen" aria-controls="panel-body">
+		<div class="panel-header-text">
+			<h1 class="panel-title">{{ title }}</h1>
+			@if (subtitle) {
+				<h2 class="panel-subtitle">{{ subtitle }}</h2>
+			}
+		</div>
+
+		<span class="chevron" [class.open]="isOpen">⌄</span>
+	</button>
+
+	<div id="panel-body" class="panel-body" [class.open]="isOpen">
+		<ng-content></ng-content>
+	</div>
+</div>

@@ -1,5 +1,5 @@
 <div class="carousel" [class.two-items]="items.length === 2">
-	@if (items.length > 1 && isNarrowScreen) {
+	@if (items.length > 1) {
 		<div class="carousel-preview blur left">
 			<button (click)="changeItem(-1)" class="prev">
 				<img src="images/left-arrow.png" alt="left arrow" />
@@ -89,7 +89,7 @@
 		</div>
 	}
 
-	@if (items.length > 1 && isNarrowScreen) {
+	@if (items.length > 1) {
 		<div class="carousel-preview blur right">
 			<button (click)="changeItem(1)" class="next">
 				<img src="images/right-arrow.png" alt="right arrow" />

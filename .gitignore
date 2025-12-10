@@ -1,10 +1,10 @@
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
 # Compiled output
-angular-frontend/dist
-/tmp
-/out-tsc
-/bazel-out
+*/dist
+*/tmp
+*/out-tsc
+*/bazel-out
 
 # Node
 */node_modules
@@ -30,20 +30,25 @@ yarn-error.log
 
 # Miscellaneous
 */.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+*/.sass-cache/
+*/connect.lock
+*/coverage
+*/libpeerconnection.log
+*/testem.log
+*/typings
 
 # System files
 *.DS_Store
 Thumbs.db
 
-.env
+# angular frontend stuff
+angular-frontend/.env
 angular-frontend/src/environments/*
-public/
-angular_commands.txt
-favicon_io/
+angular-frontend/public/
+angular-frontend/favicon_io/
+angular-frontend/angular_commands.txt
 angular-frontend/.htaccess
+
+# nest backend stuff
+nest-backend/.env
+nest-backend/node_modules/

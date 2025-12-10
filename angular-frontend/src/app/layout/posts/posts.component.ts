@@ -1,31 +1,33 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { MaterialModule } from '../../shared/material.module';
-import { PostMetadata, PostService } from './post.service';
+import { PostPanelComponent } from '../../components/post-panel/post-panel.component';
+
+interface PostPanel {
+	title: string;
+	subtitle: string;
+	isOpen: boolean;
+}
 
 @Component({
 	selector: 'app-posts',
-	imports: [CommonModule, MaterialModule],
+	imports: [PostPanelComponent],
 	templateUrl: './posts.component.html',
-	styleUrl: './posts.component.scss',
-	standalone: true
+	styleUrl: './posts.component.scss'
 })
 export class PostsComponent {
-	posts: PostMetadata[] = [];
-	contentMap: { [filename: string]: string } = {};
-
-	constructor(private postService: PostService) {}
-
-	ngOnInit(): void {
-		this.postService.getPosts().subscribe((posts) => (this.posts = posts));
-		console.log(this.posts);
-	}
-
-	loadContent(post: PostMetadata): void {
-		if (!this.contentMap[post.file]) {
-			this.postService.getPostContent(post.file).subscribe((content) => {
-				this.contentMap[post.file] = content;
-			});
+	panels: PostPanel[] = [
+		{
+			title: 'Becoming an Engineer',
+			subtitle: 'A personal story about how I found my path in software and data',
+			isOpen: false
+		},
+		{
+			title: 'My USU Hackathon Experience',
+			subtitle: 'What does it take to win a Hackathon?',
+			isOpen: false
 		}
+	];
+
+	toggle(i: number) {
+		this.panels[i].isOpen = !this.panels[i].isOpen;
 	}
 }
