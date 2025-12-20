@@ -37,12 +37,18 @@
 							}
 						}
 
-						@if (item.link) {
-							@for (l of item.link; track l) {
-								<button class="external-social-button" id="github-button" type="button" (click)="openLink(l)">
+						@if (item.github) {
+							@for (link of item.github; track link) {
+								<button class="external-social-button" id="github-button" type="button" (click)="openLink(link)">
 									<img src="images/github.png" alt="github icon" class="external-social-icon" />
 									GitHub: MakennaWorley
 								</button>
+							}
+						}
+
+						@if (item.link) {
+							@for (link of item.link; track link) {
+								<a class="external-social-button" id="link-button" (click)="openLink(link)"> See the Project </a>
 							}
 						}
 					</div>
@@ -75,9 +81,9 @@
 							}
 						}
 
-						@if (item.link) {
-							@for (l of item.link; track l) {
-								<button class="external-social-button" id="github-button" type="button" (click)="openLink(l)">
+						@if (item.github) {
+							@for (link of item.github; track link) {
+								<button class="external-social-button" id="github-button" type="button" (click)="openLink(link)">
 									<img src="images/github.png" alt="github icon" class="external-social-icon" />
 									GitHub: MakennaWorley
 								</button>

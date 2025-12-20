@@ -163,7 +163,7 @@ export class WestminsterProjectsComponent {
 			iframeSrc: [
 				'https://docs.google.com/presentation/d/e/2PACX-1vQGhVQVKOha0ycALrMQzMEeNuEBl6x1ZaNQjrfth0p7byhNwQTvl1OrZoO1ybHkyXfvrnCM5I62eDez/pubembed?start=false&loop=false&delayms=5000'
 			],
-			link: ['https://github.com/MakennaWorley/Convex-Hull-Python'],
+			github: ['https://github.com/MakennaWorley/Convex-Hull-Python'],
 			active: false
 		},
 		{
@@ -178,7 +178,17 @@ export class WestminsterProjectsComponent {
 				'https://www.youtube.com/embed/PwMn_Tok4tU?si=pNk5cS5Cie10BEA3',
 				'https://docs.google.com/presentation/d/e/2PACX-1vRuY8Zr0RdyjXJsqT5QYs-PTqDG7HlNPLzqiF2Aiv5CcqwuyZptLS80g0iMQTKrYgtd3VSIuLeu6ooS/pubembed?start=false&loop=false&delayms=5000'
 			],
-			link: ['https://github.com/westmini-software-engineering-2024sp/ZenSpelling'],
+			github: ['https://github.com/westmini-software-engineering-2024sp/ZenSpelling'],
+			active: false
+		},
+		{
+			title: 'MSPrime Predictions on Simulated Data',
+			subtitle: 'Project for Data 370: Statistical Learning<br/>Fall 2025',
+			paragraphs: [
+				'I chose this project to demonstrate my ability to apply statistical learning methods end-to-end in Python, from exploratory analysis and preprocessing through model selection, evaluation, and interpretation. This repository contains my final Statistical Learning project, where I implemented and compared multiple supervised learning approaches, making deliberate decisions around model complexity, validation strategies, and performance metrics. Rather than optimizing a single model in isolation, I focused on understanding tradeoffs such as bias–variance and interpretability, using experimentation and diagnostic plots to guide choices. The work highlights practical problem-solving, clear and modular code organization, and the ability to translate statistical learning theory into reproducible, real-world analysis.'
+			],
+			iframeSrc: ['https://www.youtube.com/embed/EHk_Ccr5fuA?si=4NsO9N2yty2hP9PU'],
+			link: ['https://makennaworley-sl-final-python-streamlitapp-7hj55p.streamlit.app/'],
 			active: true
 		},
 		{
@@ -189,7 +199,7 @@ export class WestminsterProjectsComponent {
 
 				'I selected this assignment because it integrates critical thinking and creativity through the design of a custom encryption system and bridges mathematical reasoning with computer science practice, aligning with the CS learning goal of algorithmic understanding. By translating mathematical procedures into executable code, I strengthened both my analytical and technical communication skills. This project also illustrates global responsibility—understanding the importance of secure data transmission in an increasingly digital world—and reflects Westminster’s emphasis on applying theoretical knowledge to real-world contexts.'
 			],
-			link: ['https://github.com/MakennaWorley/Matrix-Encryption-Python'],
+			github: ['https://github.com/MakennaWorley/Matrix-Encryption-Python'],
 			active: false
 		},
 		{
@@ -200,7 +210,7 @@ export class WestminsterProjectsComponent {
 
 				'I chose this project because it embodies the computer science learning goals of algorithmic reasoning, problem-solving, and software design while engaging multiple Westminster university-wide goals. It strengthened critical thinking through analyzing and optimizing agent logic, and creativity by tuning heuristics and experimenting with new strategies. Overall, this work demonstrates the synthesis of theoretical AI algorithms with practical programming to create adaptive, data-driven systems.'
 			],
-			link: ['https://github.com/MakennaWorley/Pacman-Project-Python'],
+			github: ['https://github.com/MakennaWorley/Pacman-Project-Python'],
 			active: false
 		}
 	];
@@ -214,7 +224,7 @@ export class WestminsterProjectsComponent {
 
 				'I chose this assignment because it aligns strongly with the CS learning goals of software design & development (architecting classes for game entities, reuse, modularization), algorithmic reasoning (implementing collision detection, object lifecycle management, game state updates), and the wider Westminster goals of Creativity (reinterpreting a classic game in a new context, adding features or personal touches) and Critical Thinking (debugging complex motion/interaction logic). Through building a fully functional, interactive game, I deepened my understanding of discrete simulation, real-time responsiveness, and object-oriented design in a way that extends far beyond simple console programs.'
 			],
-			link: ['https://github.com/MakennaWorley/Asteroids-Java'],
+			github: ['https://github.com/MakennaWorley/Asteroids-Java'],
 			active: true
 		},
 		{
@@ -225,7 +235,7 @@ export class WestminsterProjectsComponent {
 
 				'I selected this project because it reflects both the software design and algorithmic reasoning learning goals within Computer Science while also engaging Westminster’s critical thinking, creativity, and communication outcomes. Designing and refining a winning player required analyzing probability, anticipating opponent behavior, and balancing offensive versus defensive strategies—key elements of computational thinking. The collaborative environment of the class tournament encouraged peer learning and iterative improvement. Ultimately, this project was a rewarding intersection of mathematical reasoning, object-oriented architecture, and playful experimentation, showcasing how logic and creativity can coexist in software development.'
 			],
-			link: ['https://github.com/MakennaWorley/Uno-Project-Java'],
+			github: ['https://github.com/MakennaWorley/Uno-Project-Java'],
 			active: false
 		}
 	];
@@ -239,7 +249,7 @@ export class WestminsterProjectsComponent {
 
 				'I selected this project because it embodies the computer science learning goals of systems and network design, software development, and collaborative engineering while engaging Westminster’s broader goals of critical thinking, collaboration, and communication. Building and debugging a concurrent network server demanded analytical reasoning about synchronization and protocol flow, while designing clean message structures fostered clear cross-team communication. The project also reflects creativity and global responsibility by exploring open communication tools and demonstrating how diverse programming ecosystems can interact securely and efficiently. Overall, this assignment solidified my understanding of network protocols, concurrency, and full-stack integration between Rust and Java.'
 			],
-			link: ['https://github.com/MakennaWorley/Custom-Chatroom-JavaRust'],
+			github: ['https://github.com/MakennaWorley/Custom-Chatroom-JavaRust'],
 			active: true
 		},
 		{
@@ -250,7 +260,7 @@ export class WestminsterProjectsComponent {
 
 				'I chose this project because it demonstrates the computer science learning goals of systems programming, algorithmic reasoning, and software design, as well as Westminster’s goals of critical thinking and creativity. Translating a memory-management algorithm into Rust required deep understanding of data structure design and resource management while adapting low-level logic to a high-level, type-safe environment. This process enhanced my ability to reason about efficiency and correctness at the hardware–software interface. It also strengthened my technical communication through clear documentation and output formatting, making the code both educational and maintainable.'
 			],
-			link: ['https://github.com/MakennaWorley/LRU-Approximation-Rust'],
+			github: ['https://github.com/MakennaWorley/LRU-Approximation-Rust'],
 			active: false
 		}
 	];
@@ -266,7 +276,7 @@ export class WestminsterProjectsComponent {
 
 				'I selected this project because it reflects core computer science learning goals in systems-level programming and algorithmic reasoning, as well as Westminster’s critical thinking and communication outcomes. Implementing page replacement at this level helped me understand how theoretical OS concepts—like page tables, memory access, and caching—translate into actual processes and data structures. It also challenged me to think about efficiency and correctness under tight constraints. This project directly inspired my later Rust reimplementation, where I explored how modern languages can achieve the same low-level performance with improved safety and readability, deepening my comparative understanding of programming paradigms.'
 			],
-			link: ['https://github.com/MakennaWorley/Operating-Systems-Homework-C/blob/main/LRU.c'],
+			github: ['https://github.com/MakennaWorley/Operating-Systems-Homework-C/blob/main/LRU.c'],
 			active: true
 		},
 		{
@@ -277,7 +287,7 @@ export class WestminsterProjectsComponent {
 
 				'I chose this project because it strongly reflects the Computer Science learning goals of software design & development (structuring modular functions for image operations), algorithmic reasoning (designing efficient pixel operations and scaling logic), and systems programming (low-level manipulation of files and memory). It also engages Westminster’s university-wide goals of critical thinking (debugging subtle binary format issues), and creativity (designing and implementing novel image transformations). Through this project, I deepened my understanding of how higher-level image libraries operate under the hood and gained confidence working close to the hardware/data interface.'
 			],
-			link: ['https://github.com/MakennaWorley/Systems-Homework-C/blob/main/project2/project2.c'],
+			github: ['https://github.com/MakennaWorley/Systems-Homework-C/blob/main/project2/project2.c'],
 			active: false
 		}
 	];
@@ -291,7 +301,7 @@ export class WestminsterProjectsComponent {
 
 				'I chose this project because it embodies the computer science learning goals of software design, database management, and systems integration, while engaging Westminster’s critical thinking, communication, and creativity goals. Building a database-driven website required analytical reasoning to design relational schemas, problem-solving to debug server-side connections, and clear communication through user interface design and documentation. The project also reflects global responsibility by emphasizing the creation of accessible, functional, and secure database applications—skills essential to modern, data-driven software engineering.'
 			],
-			link: ['https://github.com/MakennaWorley/Chess-Website-LAMP'],
+			github: ['https://github.com/MakennaWorley/Chess-Website-LAMP'],
 			active: true
 		}
 	];
@@ -305,7 +315,7 @@ export class WestminsterProjectsComponent {
 
 				'I chose this project because it strongly supports the computer science learning goals of algorithmic reasoning, systems programming, and software design, while aligning with Westminster’s critical thinking and creativity outcomes. Debugging and optimizing assembly code required a methodical and analytical mindset, while structuring the quicksort algorithm at the instruction level encouraged creative problem-solving within strict constraints. This project also reinforced communication and collaboration, as clear commenting and peer discussions were essential for understanding and debugging such low-level code. Overall, it represents one of the most technically challenging and rewarding demonstrations of how theory meets hardware execution in computer science.'
 			],
-			link: ['https://github.com/MakennaWorley/ARM-Assembly'],
+			github: ['https://github.com/MakennaWorley/ARM-Assembly'],
 			active: true
 		},
 		{
@@ -316,7 +326,7 @@ export class WestminsterProjectsComponent {
 
 				'I chose this project because it highlights the computer science learning goals of software design and algorithmic reasoning, while engaging Westminster’s critical thinking, creativity, and communication outcomes. Managing structured data and implementing CSV operations in Pascal required thoughtful problem decomposition and precise syntax management. It also encouraged creativity in designing a user-friendly, menu-driven interface despite the language’s minimalism. Through this project, I deepened my appreciation for language design and program structure—skills that directly inform my later work in more modern ecosystems like Rust and Python.'
 			],
-			link: ['https://github.com/MakennaWorley/Pokedex-Pascal'],
+			github: ['https://github.com/MakennaWorley/Pokedex-Pascal'],
 			active: false
 		}
 	];

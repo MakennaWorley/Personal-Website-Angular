@@ -187,6 +187,19 @@
 	background: transparent;
 }
 
+#link-button {
+	background-color: $accent-1;
+	color: $blue-white;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+
+	&:hover {
+		color: $accent-1;
+		background-color: $blue-white;
+	}
+}
+
 #notebook-code {
 	height: 800px !important;
 	max-height: 800px !important;
