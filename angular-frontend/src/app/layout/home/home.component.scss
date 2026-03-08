@@ -30,3 +30,159 @@
 		background-color: $blue-white;
 	}
 }
+
+.bento-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: minmax(200px, auto);
+	gap: 1rem;
+	padding: 1rem;
+	max-width: 1400px;
+	margin: 0 auto;
+
+	@media screen and (max-width: 1200px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media screen and (max-width: 768px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.bento-box {
+	background: linear-gradient(135deg, $blue-white 0%, $section-background 100%);
+	border: 2px solid $blue-info;
+	border-radius: 1rem;
+	padding: 1.5rem;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+	display: flex;
+	flex-direction: column;
+}
+
+.bento-large {
+	grid-column: span 2;
+	grid-row: span 2;
+
+	@media screen and (max-width: 1200px) {
+		grid-column: span 2;
+		grid-row: span 1;
+	}
+
+	@media screen and (max-width: 768px) {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+}
+
+.bento-medium {
+	grid-column: span 2;
+	grid-row: span 1;
+
+	@media screen and (max-width: 1200px) {
+		grid-column: span 1;
+	}
+
+	@media screen and (max-width: 768px) {
+		grid-column: span 1;
+	}
+}
+
+.bento-small {
+	grid-column: span 2;
+	grid-row: span 1;
+
+	@media screen and (max-width: 1200px) {
+		grid-column: span 2;
+	}
+
+	@media screen and (max-width: 768px) {
+		grid-column: span 1;
+	}
+}
+
+.bento-title {
+	color: $blue-primary;
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	text-align: center;
+	border-bottom: 2px solid $blue-info;
+	padding-bottom: 0.5rem;
+}
+
+.skills-icons {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+	gap: 1rem;
+	align-items: center;
+	justify-items: center;
+	flex: 1;
+}
+
+.skill-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	text-align: center;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease,
+		background-color 0.3s ease;
+
+	&:hover {
+		transform: scale(1.15);
+		box-shadow:
+			0 0 20px rgba(42, 110, 189, 0.4),
+			0 0 40px rgba(42, 110, 189, 0.2);
+		background-color: rgba(42, 110, 189, 0.05);
+
+		img,
+		svg,
+		i {
+			filter: drop-shadow(0 0 8px rgba(42, 110, 189, 0.6));
+		}
+
+		span {
+			color: $blue-primary;
+			font-weight: 600;
+		}
+	}
+
+	img,
+	svg,
+	i {
+		width: 3rem;
+		height: 3rem;
+		pointer-events: none;
+		transition:
+			filter 0.3s ease,
+			transform 0.3s ease;
+		object-fit: contain;
+		display: block;
+	}
+
+	span {
+		font-size: 0.85rem;
+		font-weight: 500;
+		color: $grey-dark;
+		pointer-events: none;
+		transition:
+			color 0.3s ease,
+			font-weight 0.3s ease;
+	}
+
+	// Hide span for wordmark icons since they include the text
+	&:has(img[src*='wordmark']) span {
+		display: none;
+	}
+}
