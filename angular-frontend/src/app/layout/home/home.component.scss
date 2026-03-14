@@ -31,6 +31,19 @@
 	}
 }
 
+#link-button {
+	background-color: $accent-1;
+	color: $blue-white;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+
+	&:hover {
+		color: $accent-1;
+		background-color: $blue-white;
+	}
+}
+
 .bento-grid {
 	display: grid;
 	grid-template-columns: 2fr 1fr 2fr;
