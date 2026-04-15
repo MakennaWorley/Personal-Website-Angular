@@ -23,6 +23,26 @@
 							<p>{{ para }}</p>
 						}
 
+						@if (item.youtubeId) {
+							@for (videoId of item.youtubeId; track videoId) {
+								@if (isVideoLoaded(item.title + videoId)) {
+									<iframe
+										[src]="getYouTubeUrl(videoId)"
+										[title]="item.title + ' video'"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										referrerpolicy="strict-origin-when-cross-origin"
+										allowfullscreen
+									></iframe>
+								} @else {
+									<button class="video-facade" (click)="loadVideo(item.title + videoId)" [attr.aria-label]="'Play ' + item.title + ' video'">
+										<img [src]="'https://i.ytimg.com/vi/' + videoId + '/hqdefault.jpg'" [alt]="item.title + ' video thumbnail'" loading="lazy" />
+										<span class="play-button" aria-hidden="true">&#9654;</span>
+									</button>
+								}
+							}
+						}
+
 						@if (item.iframeSrc) {
 							@for (iframe of item.iframeSrc; track iframe) {
 								<iframe
@@ -34,6 +54,12 @@
 									mozallowfullscreen="true"
 									webkitallowfullscreen="true"
 								></iframe>
+							}
+						}
+
+						@if (item.presentationUrl) {
+							@for (pres of item.presentationUrl; track pres) {
+								<a class="external-social-button" id="link-button" [href]="pres.url" target="_blank" rel="noopener noreferrer">{{ pres.label }}</a>
 							}
 						}
 
@@ -67,6 +93,26 @@
 							<p>{{ para }}</p>
 						}
 
+						@if (item.youtubeId) {
+							@for (videoId of item.youtubeId; track videoId) {
+								@if (isVideoLoaded(item.title + videoId)) {
+									<iframe
+										[src]="getYouTubeUrl(videoId)"
+										[title]="item.title + ' video'"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										referrerpolicy="strict-origin-when-cross-origin"
+										allowfullscreen
+									></iframe>
+								} @else {
+									<button class="video-facade" (click)="loadVideo(item.title + videoId)" [attr.aria-label]="'Play ' + item.title + ' video'">
+										<img [src]="'https://i.ytimg.com/vi/' + videoId + '/hqdefault.jpg'" [alt]="item.title + ' video thumbnail'" loading="lazy" />
+										<span class="play-button" aria-hidden="true">&#9654;</span>
+									</button>
+								}
+							}
+						}
+
 						@if (item.iframeSrc) {
 							@for (iframe of item.iframeSrc; track iframe) {
 								<iframe
@@ -78,6 +124,12 @@
 									mozallowfullscreen="true"
 									webkitallowfullscreen="true"
 								></iframe>
+							}
+						}
+
+						@if (item.presentationUrl) {
+							@for (pres of item.presentationUrl; track pres) {
+								<a class="external-social-button" id="link-button" [href]="pres.url" target="_blank" rel="noopener noreferrer">{{ pres.label }}</a>
 							}
 						}
 

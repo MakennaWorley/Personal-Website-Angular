@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, Input, OnChanges, OnDestroy, OnInit, QueryList, SimpleChanges, ViewChildren } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
 	selector: 'app-carousel',
@@ -18,6 +18,7 @@ export class CarouselComponent implements OnChanges, AfterViewInit, OnInit, OnDe
 
 	current = 0;
 	itemWidth = 0;
+	loadedVideos = new Set<string>();
 
 	constructor(private sanitizer: DomSanitizer) {}
 
@@ -100,6 +101,18 @@ export class CarouselComponent implements OnChanges, AfterViewInit, OnInit, OnDe
 
 	openLink(url: string): void {
 		window.open(url, '_blank', 'noopener,noreferrer');
+	}
+
+	loadVideo(key: string): void {
+		this.loadedVideos.add(key);
+	}
+
+	isVideoLoaded(key: string): boolean {
+		return this.loadedVideos.has(key);
+	}
+
+	getYouTubeUrl(videoId: string): SafeResourceUrl {
+		return this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`);
 	}
 
 	updateScreenWidth = (): void => {

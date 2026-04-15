@@ -24,25 +24,28 @@
 			</p>
 			<div class="video-container">
 				<iframe
-					src="https://www.youtube.com/embed/CIjyxJpUGao?si=h5gd_ZRaxXnNUA8w"
+					*ngIf="videoLoaded"
+					src="https://www.youtube-nocookie.com/embed/CIjyxJpUGao?si=h5gd_ZRaxXnNUA8w&autoplay=1"
 					title="CircuitCraft Demo"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerpolicy="strict-origin-when-cross-origin"
 					allowfullscreen
 				></iframe>
+				<button *ngIf="!videoLoaded" class="video-facade" (click)="loadVideo()" aria-label="Play CircuitCraft Demo video">
+					<img src="https://i.ytimg.com/vi/CIjyxJpUGao/hqdefault.jpg" alt="CircuitCraft Demo thumbnail" loading="lazy" />
+					<span class="play-button" aria-hidden="true">&#9654;</span>
+				</button>
 			</div>
-			<div class="video-container">
-				<iframe
-					src="https://docs.google.com/presentation/d/e/2PACX-1vT7HaHvIlMuHYS0vHQPUew_ci7b4XSkrA_eNm_vcj3U8WCigAH8FwZ--EbotsICYjGciElJDQN6SMZ3/pubembed?start=false&loop=false&delayms=5000"
-					frameborder="0"
-					width="960"
-					height="569"
-					allowfullscreen="true"
-					mozallowfullscreen="true"
-					webkitallowfullscreen="true"
-				></iframe>
-			</div>
+			<a
+				id="link-button"
+				href="https://docs.google.com/presentation/d/e/2PACX-1vT7HaHvIlMuHYS0vHQPUew_ci7b4XSkrA_eNm_vcj3U8WCigAH8FwZ--EbotsICYjGciElJDQN6SMZ3/pub"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="external-social-button"
+			>
+				View CircuitCraft Presentation
+			</a>
 			<button onclick="window.open('https://github.com/klenth/circuitcraft', '_blank')" class="external-social-button" id="github-button">
 				<img src="images/github.webp" alt="github icon" class="external-social-icon" />
 				Link to GitHub Repo

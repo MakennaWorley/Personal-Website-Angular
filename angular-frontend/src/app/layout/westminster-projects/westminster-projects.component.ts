@@ -160,8 +160,12 @@ export class WestminsterProjectsComponent {
 
 				'I chose this project because it highlights critical thinking and algorithmic design, both key Computer Science learning goals. It deepened my understanding of computational geometry and complexity analysis by forcing me to reason about algorithm efficiency in practice rather than only in theory. Debugging visual output and timing comparisons encouraged creativity in how I displayed and validated the results, while documenting my findings through clear visualizations and explanatory comments strengthened communication. Overall, this assignment demonstrates my ability to translate formal algorithmic reasoning into applied data analysis and visualization.'
 			],
-			iframeSrc: [
-				'https://docs.google.com/presentation/d/e/2PACX-1vQGhVQVKOha0ycALrMQzMEeNuEBl6x1ZaNQjrfth0p7byhNwQTvl1OrZoO1ybHkyXfvrnCM5I62eDez/pubembed?start=false&loop=false&delayms=5000'
+			iframeSrc: [],
+			presentationUrl: [
+				{
+					url: 'https://docs.google.com/presentation/d/e/2PACX-1vQGhVQVKOha0ycALrMQzMEeNuEBl6x1ZaNQjrfth0p7byhNwQTvl1OrZoO1ybHkyXfvrnCM5I62eDez/pub',
+					label: 'View Convex Hull Presentation'
+				}
 			],
 			github: ['https://github.com/MakennaWorley/Convex-Hull-Python'],
 			active: false
@@ -174,9 +178,13 @@ export class WestminsterProjectsComponent {
 
 				'This project directly supports the CS learning goal of software design & development (Django MVC patterns, data modeling, and front-end architecture) and multiple Westminster university-wide goals: Critical Thinking (debugging tricky UI logic and timing), Creativity (visual design, animations, and sound to enhance engagement), Collaboration (Agile tickets, standups, and disciplined branching after early Git missteps), and Communication (clear in-team handoffs plus a public demo/presentation). We also connected with Global Responsibility by building with accessibility in mind, ensuring the game communicates feedback through more than color and supports a broader set of learners.'
 			],
-			iframeSrc: [
-				'https://www.youtube.com/embed/PwMn_Tok4tU?si=pNk5cS5Cie10BEA3',
-				'https://docs.google.com/presentation/d/e/2PACX-1vRuY8Zr0RdyjXJsqT5QYs-PTqDG7HlNPLzqiF2Aiv5CcqwuyZptLS80g0iMQTKrYgtd3VSIuLeu6ooS/pubembed?start=false&loop=false&delayms=5000'
+			youtubeId: ['PwMn_Tok4tU'],
+			iframeSrc: [],
+			presentationUrl: [
+				{
+					url: 'https://docs.google.com/presentation/d/e/2PACX-1vRuY8Zr0RdyjXJsqT5QYs-PTqDG7HlNPLzqiF2Aiv5CcqwuyZptLS80g0iMQTKrYgtd3VSIuLeu6ooS/pub',
+					label: 'View Zen Spelling Presentation'
+				}
 			],
 			github: ['https://github.com/westmini-software-engineering-2024sp/ZenSpelling'],
 			active: false
@@ -187,7 +195,8 @@ export class WestminsterProjectsComponent {
 			paragraphs: [
 				'I chose this project to demonstrate my ability to apply statistical learning methods end-to-end in Python, from exploratory analysis and preprocessing through model selection, evaluation, and interpretation. This repository contains my final Statistical Learning project, where I implemented and compared multiple supervised learning approaches, making deliberate decisions around model complexity, validation strategies, and performance metrics. Rather than optimizing a single model in isolation, I focused on understanding tradeoffs such as bias–variance and interpretability, using experimentation and diagnostic plots to guide choices. The work highlights practical problem-solving, clear and modular code organization, and the ability to translate statistical learning theory into reproducible, real-world analysis.'
 			],
-			iframeSrc: ['https://www.youtube.com/embed/EHk_Ccr5fuA?si=4NsO9N2yty2hP9PU'],
+			youtubeId: ['EHk_Ccr5fuA'],
+			iframeSrc: [],
 			link: ['https://makennaworley-sl-final-python-streamlitapp-7hj55p.streamlit.app/'],
 			active: true
 		},
