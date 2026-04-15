@@ -1,5 +1,43 @@
 <div class="center-content">
 	<div class="block-text center-content">
+		<div id="probabilistic-inference" class="project">
+			<h1>Probabilistic Ancestral Inference Research Project</h1>
+			<h2>Python, TypeScript, React, FastAPI, PyMC, PyTorch, PyTorch Geometric, Docker</h2>
+			<p>
+				This is my senior capstone project. The core problem is incomplete ancestry data — sequencing every ancestor is often impossible due
+				to cost, sample degradation, or ethical constraints. This project evaluates whether probabilistic models can reconstruct missing
+				ancestral genotypes even when large portions of data are absent. It benchmarks the trade-offs between computational efficiency and
+				inference precision across five model architectures: Bayesian categorical, HMM, DNN, GNN, and multinomial logistic regression.
+			</p>
+			<p>
+				The system uses <code>msprime</code> to simulate multi-generational diploid populations with explicit pedigree tracking, then
+				systematically masks genotype data to create realistic missingness. Feature engineering builds relative-aggregation vectors from k-hop
+				pedigree graphs, and each model is trained and evaluated against the known ground truth. All five models implement a shared interface
+				for consistent benchmarking.
+			</p>
+			<p>
+				The frontend is a React 19 + TypeScript dashboard built with Material UI, allowing users to simulate datasets, explore family trees,
+				train models, and view evaluation graphs such as ROC curves, precision-recall curves, and confusion matrices. The backend is a FastAPI
+				service containerized with Docker Compose, with optional NVIDIA GPU support for accelerated training.
+			</p>
+			<p>
+				The biggest challenge was designing a system that could fairly compare five fundamentally different model types — from MCMC-based
+				Bayesian inference to graph neural networks — under the same evaluation conditions. Getting the pedigree graph construction, feature
+				engineering, and training pipeline to work consistently across all architectures required significant iteration.
+			</p>
+			<a id="link-button" href="https://capstone.makennaworley.com/" target="_blank" rel="noopener noreferrer" class="external-social-button">
+				Live Demo
+			</a>
+			<button
+				onclick="window.open('https://github.com/MakennaWorley/Capstone-TypescriptPython', '_blank')"
+				class="external-social-button"
+				id="github-button"
+			>
+				<img src="images/github.webp" alt="github icon" class="external-social-icon" />
+				Link to GitHub Repo
+			</button>
+		</div>
+
 		<div id="rust-db" class="project">
 			<h1>From Scratch Database: A Rust recreation of a SQL Database</h1>
 			<h2>Rust, SQL, Algorithms, System Design</h2>
