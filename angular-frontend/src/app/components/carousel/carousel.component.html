@@ -35,8 +35,16 @@
 										allowfullscreen
 									></iframe>
 								} @else {
-									<button class="video-facade" (click)="loadVideo(item.title + videoId)" [attr.aria-label]="'Play ' + item.title + ' video'">
-										<img [src]="'https://i.ytimg.com/vi/' + videoId + '/hqdefault.jpg'" [alt]="item.title + ' video thumbnail'" loading="lazy" />
+									<button
+										class="video-facade"
+										(click)="loadVideo(item.title + videoId)"
+										[attr.aria-label]="'Play ' + item.title + ' video'"
+									>
+										<img
+											[src]="'https://i.ytimg.com/vi/' + videoId + '/hqdefault.jpg'"
+											[alt]="item.title + ' video thumbnail'"
+											loading="lazy"
+										/>
 										<span class="play-button" aria-hidden="true">&#9654;</span>
 									</button>
 								}
@@ -59,7 +67,9 @@
 
 						@if (item.presentationUrl) {
 							@for (pres of item.presentationUrl; track pres) {
-								<a class="external-social-button" id="link-button" [href]="pres.url" target="_blank" rel="noopener noreferrer">{{ pres.label }}</a>
+								<a class="external-social-button" id="link-button" [href]="pres.url" target="_blank" rel="noopener noreferrer">{{
+									pres.label
+								}}</a>
 							}
 						}
 
@@ -105,8 +115,16 @@
 										allowfullscreen
 									></iframe>
 								} @else {
-									<button class="video-facade" (click)="loadVideo(item.title + videoId)" [attr.aria-label]="'Play ' + item.title + ' video'">
-										<img [src]="'https://i.ytimg.com/vi/' + videoId + '/hqdefault.jpg'" [alt]="item.title + ' video thumbnail'" loading="lazy" />
+									<button
+										class="video-facade"
+										(click)="loadVideo(item.title + videoId)"
+										[attr.aria-label]="'Play ' + item.title + ' video'"
+									>
+										<img
+											[src]="'https://i.ytimg.com/vi/' + videoId + '/hqdefault.jpg'"
+											[alt]="item.title + ' video thumbnail'"
+											loading="lazy"
+										/>
 										<span class="play-button" aria-hidden="true">&#9654;</span>
 									</button>
 								}
@@ -129,7 +147,9 @@
 
 						@if (item.presentationUrl) {
 							@for (pres of item.presentationUrl; track pres) {
-								<a class="external-social-button" id="link-button" [href]="pres.url" target="_blank" rel="noopener noreferrer">{{ pres.label }}</a>
+								<a class="external-social-button" id="link-button" [href]="pres.url" target="_blank" rel="noopener noreferrer">{{
+									pres.label
+								}}</a>
 							}
 						}
 

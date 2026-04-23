@@ -121,6 +121,9 @@ em {
 	flex: 1;
 	min-width: 100px;
 	padding: 0.5rem;
+	max-width: 100%;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
 }
 
 .block-image {
@@ -146,9 +149,22 @@ em {
 	border-radius: 1.25rem;
 	cursor: pointer;
 	padding: 0.5rem;
+	white-space: nowrap;
 	transition:
 		background-color 0.3s ease,
 		color 0.3s ease;
+}
+
+.button-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
 }
 
 .external-social-icon {
@@ -202,13 +218,16 @@ em {
 }
 
 .project {
-	margin: 4rem 0;
+	margin: 4rem auto;
 	padding: 2rem;
 	background-color: $blue-white;
 	border-radius: 0.5rem;
 	border-color: $blue-info;
 	width: 90%;
 	box-shadow: 0 4px 10px $grey-dark;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 
 	h1,
 	h2 {
@@ -218,6 +237,20 @@ em {
 	p {
 		margin-bottom: 1rem;
 		line-height: 1.6;
+	}
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+		margin: 2rem 1rem;
+		padding: 1.5rem;
+		box-sizing: border-box;
+	}
+
+	@media screen and (max-width: 480px) {
+		width: 100%;
+		margin: 1.5rem 0.5rem;
+		padding: 1rem;
+		box-sizing: border-box;
 	}
 }
 

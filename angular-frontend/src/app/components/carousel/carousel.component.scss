@@ -40,6 +40,7 @@
 .carousel {
 	position: relative;
 	height: 1000px;
+	max-height: 90vh;
 	width: 100vw;
 	max-width: 2000px;
 	background: $blue-white;
@@ -86,6 +87,7 @@
 		width: clamp(300px, 80%, 800px);
 		padding: 1rem;
 		height: 900px;
+		max-height: calc(90vh - 2rem);
 		background: $blue-white;
 		border-radius: 8px;
 		box-shadow: 0 2px 8px $grey-dark;
