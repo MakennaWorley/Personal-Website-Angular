@@ -46,6 +46,74 @@
 			</div>
 		</div>
 
+		<div id="chessweb" class="project">
+			<h1>ChessWeb: A Chess Rating and Pairing System</h1>
+			<h2>Django, Python, Javascript, SQLite, Web Development, Data Modeling, Full-Stack Development</h2>
+			<p>
+				Volunteering at Oakwood Elementary's Chess Club made it apparent that there is no software that is freely available for clubs to use
+				to 1) store their player information such as name, rating, parent contact, etc., and 2) pair the players with an algorithm which is
+				commonly used in tournaments. Therefore, I recreated a PHP version of this (minus the pairing system) for my final for Databases, but
+				I needed to add the pairing algorithm, and given I was liking the Django framework, I decided to move the project from PHP to Django,
+				and thus ChessWeb was born, currently in pre-release version 1.1.
+			</p>
+			<p>
+				The largest challenge with this project is trying to keep all the tasks on schedule and constantly making improvements to the entire
+				codebase. Since as I use the code to do the pairings and ratings, I find bugs which get patched only to discover more bugs, and thus
+				it seems like a never-ending cycle. I also constantly need to keep the scope of the project in mind since I have many ideas for this
+				project but I also need to get it done. At the moment, there are only 2 or 3 outstanding features I need to finish before I can mark
+				this as a full release (via a docker container). But eventually this will become a web app open to any chess club.
+			</p>
+			<p>
+				This uses the Django framework for the codebase with vanilla JS. I might transition this to TS since I really want the strong typing
+				of TypeScript moving forward, but my first priority is getting the project into a full release.
+			</p>
+			<p>
+				Even in the pre-released version of this application, my code saves 4+ hours a week of the director's time which was spent manually
+				updating the ratings and pairing the students. While the code does a good enough job at getting the majority of the pairings done, the
+				director does have to go over them and make any adjustments. My end goal is to get this code on the web and open for any club to use.
+			</p>
+			<div class="button-container">
+				<button
+					onclick="window.open('https://github.com/MakennaWorley/Chess-Website-Django', '_blank')"
+					class="external-social-button"
+					id="github-button"
+				>
+					<img src="images/github.webp" alt="github icon" class="external-social-icon" />
+					Link to GitHub Repo
+				</button>
+			</div>
+		</div>
+
+		<div id="hackusu-datathon" class="project">
+			<h1>Satellite Visualization App</h1>
+			<h2>HackUSU 2025 - 1st Place Datathon</h2>
+			<h2>Deno, Fresh, Chart.js, Plotly, TypeScript</h2>
+			<p>
+				In late winter 2025, I joined a team of Westminster students to compete at HackUSU 2025, the largest collegiate hackathon in Utah. We
+				won 1st place in the Datathon category for visualizing satellite data by creating a Deno Fresh web application using Chart.js and
+				Plotly—all within 24 hours. I couldn’t have asked for a better team!
+			</p>
+			<p>
+				The biggest challenge with this project was scope creep and the sheer amount of data we were given. We initially envisioned a complex
+				3D model that users could manipulate to visualize the satellite’s path, but eventually decided to follow the KISS principle (“keep it
+				simple, stupid”). We sketched our first draft of graphs on a whiteboard and then coded them for the project. The dataset came with a
+				65-page document explaining what each measurement represented, so we narrowed our scope to only display the data we fully understood.
+			</p>
+			<p>All the code for this project is written in TypeScript, making use of the packages Chart.js, Plotly.js, and Preact.</p>
+			<p>As of now, we have no plans to optimize page load times or further refine the code.</p>
+			<div class="button-container">
+				<a
+					id="link-button"
+					href="https://hackathon-usu-rpo.deno.dev/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="external-social-button"
+				>
+					See the Project
+				</a>
+			</div>
+		</div>
+
 		<div id="rust-db" class="project">
 			<h1>From Scratch Database: A Rust recreation of a SQL Database</h1>
 			<h2>Rust, SQL, Algorithms, System Design</h2>
@@ -83,64 +151,73 @@
 			</div>
 		</div>
 
-		<div id="hackusu-datathon" class="project">
-			<h1>HackUSU Satellite Visualization App</h1>
-			<h2>Deno, Fresh, Chart.js, Plotly, TypeScript</h2>
+		<div id="digital-locker" class="project">
+			<h1>Digital Locker — Private Asset Vault</h1>
+			<h2>Go, Next.js, TypeScript, Tailwind CSS, Gin, GORM, SQLite</h2>
 			<p>
-				In late winter 2025, I joined a team of Westminster students to compete at HackUSU 2025, the largest collegiate hackathon in Utah. We
-				won 1st place in the Datathon category for visualizing satellite data by creating a Deno Fresh web application using Chart.js and
-				Plotly—all within 24 hours. I couldn’t have asked for a better team!
+				This is a hybrid full-stack project that demonstrates a Go backend with a Next.js 14 frontend. The application provides a secure,
+				dark-themed vault dashboard for managing and sharing files. Users can register local files by name and path, then generate
+				time-limited download links with configurable access restrictions.
 			</p>
 			<p>
-				The biggest challenge with this project was scope creep and the sheer amount of data we were given. We initially envisioned a complex
-				3D model that users could manipulate to visualize the satellite’s path, but eventually decided to follow the KISS principle (“keep it
-				simple, stupid”). We sketched our first draft of graphs on a whiteboard and then coded them for the project. The dataset came with a
-				65-page document explaining what each measurement represented, so we narrowed our scope to only display the data we fully understood.
-			</p>
-			<p>All the code for this project is written in TypeScript, making use of the packages Chart.js, Plotly.js, and Preact.</p>
-			<p>As of now, we have no plans to optimize page load times or further refine the code.</p>
-			<div class="button-container">
-				<a
-					id="link-button"
-					href="https://hackathon-usu-rpo.deno.dev/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="external-social-button"
-				>
-					See the Project
-				</a>
-			</div>
-		</div>
-
-		<div id="chessweb" class="project">
-			<h1>ChessWeb: A Chess Rating and Pairing System</h1>
-			<h2>Django, Python, Javascript, SQLite, Web Development, Data Modeling, Full-Stack Development</h2>
-			<p>
-				Volunteering at Oakwood Elementary's Chess Club made it apparent that there is no software that is freely available for clubs to use
-				to 1) store their player information such as name, rating, parent contact, etc., and 2) pair the players with an algorithm which is
-				commonly used in tournaments. Therefore, I recreated a PHP version of this (minus the pairing system) for my final for Databases, but
-				I needed to add the pairing algorithm, and given I was liking the Django framework, I decided to move the project from PHP to Django,
-				and thus ChessWeb was born, currently in pre-release version 1.1.
+				The backend uses Go with the Gin framework and GORM ORM to handle file management and stream files directly from disk using
+				<code>io.Copy</code>. Each download link is protected by API key authentication and can enforce expiration times (1 hour to 1 week)
+				and download limits (0 for unlimited, 1 for one-time access, or any custom number). The frontend provides an intuitive UI for adding
+				assets, generating links, copying them to clipboard, and deleting files from the vault. All styling uses Tailwind CSS with a
+				slate-dark theme and Lucide React icons.
 			</p>
 			<p>
-				The largest challenge with this project is trying to keep all the tasks on schedule and constantly making improvements to the entire
-				codebase. Since as I use the code to do the pairings and ratings, I find bugs which get patched only to discover more bugs, and thus
-				it seems like a never-ending cycle. I also constantly need to keep the scope of the project in mind since I have many ideas for this
-				project but I also need to get it done. At the moment, there are only 2 or 3 outstanding features I need to finish before I can mark
-				this as a full release (via a docker container). But eventually this will become a web app open to any chess club.
+				The biggest challenge with this project is balancing simplicity with security—ensuring that the API key protection prevents
+				unauthorized link generation while keeping the UI approachable for everyday use. I'm also exploring optimal file streaming strategies
+				for large files without blocking the server.
 			</p>
 			<p>
-				This uses the Django framework for the codebase with vanilla JS. I might transition this to TS since I really want the strong typing
-				of TypeScript moving forward, but my first priority is getting the project into a full release.
-			</p>
-			<p>
-				Even in the pre-released version of this application, my code saves 4+ hours a week of the director's time which was spent manually
-				updating the ratings and pairing the students. While the code does a good enough job at getting the majority of the pairings done, the
-				director does have to go over them and make any adjustments. My end goal is to get this code on the web and open for any club to use.
+				This project is still in early development as I continue to refine the feature set and add more sophisticated file management
+				capabilities. The codebase demonstrates my ability to quickly prototype across different tech stacks and integrate modern frontend and
+				backend technologies.
 			</p>
 			<div class="button-container">
 				<button
-					onclick="window.open('https://github.com/MakennaWorley/Chess-Website-Django', '_blank')"
+					onclick="window.open('https://github.com/MakennaWorley/File-Sharing-GoNext', '_blank')"
+					class="external-social-button"
+					id="github-button"
+				>
+					<img src="images/github.webp" alt="github icon" class="external-social-icon" />
+					Link to GitHub Repo
+				</button>
+			</div>
+		</div>
+
+		<div id="get-it-done-griff" class="project">
+			<h1>GET IT DONE With Griff! - Productivity Focus Tool</h1>
+			<h2>HackUSU 2026</h2>
+			<h2>JavaScript, HTML, CSS, Chrome Extension Manifest V3, Electron, Node.js, Ollama</h2>
+			<p>
+				In March 2026, I lead a team at HackUSU 2026 to build a productivity tool designed to help users stay focused during work sessions. We
+				created a dual-platform solution: a Chrome browser extension and a Windows desktop application, both featuring Griff, an interactive
+				animated griffin mascot that helps users manage their focus time and block distracting websites and applications.
+			</p>
+			<p>
+				The browser extension allows users to set customizable focus session lengths, manage a smart blocklist with pre-configured categories
+				(Social Media, Video Streaming, Chat, News, Forums, Shopping, Gaming, etc.), and automatically close blacklisted websites during
+				sessions. Griff appears on every tab, providing visual feedback by becoming progressively "angrier" when users visit blocked sites,
+				with a 10-second warning before automatic tab closure. Users can also triple-click Griff to open an AI-powered chat interface for
+				focus suggestions and encouragement.
+			</p>
+			<p>
+				The Windows desktop application extends this functionality beyond the browser by monitoring and blocking distracting applications
+				system-wide using PowerShell integration and native window detection. It displays an overlay showing Griff and the session timer,
+				syncing seamlessly with the browser extension. The AI chat uses Ollama's Phi-3 Mini model for lightweight local inference, avoiding
+				cloud dependencies.
+			</p>
+			<p>
+				The biggest challenge was implementing a unified focus management system that worked consistently across both platforms while keeping
+				the codebase maintainable. We also had to balance feature scope with the 24-hour hackathon timeframe, focusing on core functionality
+				rather than polish.
+			</p>
+			<div class="button-container">
+				<button
+					onclick="window.open('https://github.com/MakennaWorley/HackUSU2026-Javascript', '_blank')"
 					class="external-social-button"
 					id="github-button"
 				>
@@ -185,9 +262,42 @@
 				</button>
 			</div>
 		</div>
+
+		<div id="texas-holdem" class="project">
+			<h1>Card Games: Texas Hold'em</h1>
+			<h2>Python, Unit Testing, Test Driven Development</h2>
+			<p>
+				I wanted to practice what I had learned in my AI class so I recreated Texas Hold'em in Python with different players: random, human,
+				alpha-beta pruning, and minimax. This is more of a silly project I spun up on a weekend as a weekend project to give myself something
+				to do.
+			</p>
+			<p>
+				The largest challenge with this project was making sure the hand ranks were properly calculated, which meant a lot of Python unit
+				testing, which I haven't done a ton of. I learned a lot about test-driven development, which allows me to quickly make sure all my
+				code works as expected.
+			</p>
+			<p>
+				This project is purely built with Python using a couple of functions from itertools, collections, pandas, unittest, math, and random.
+				I might rewrite this code to use only my code and no external libraries.
+			</p>
+			<p>
+				While this project was primarily a weekend challenge for fun, it sharpened my skills in implementing AI strategies and test-driven
+				development.
+			</p>
+			<div class="button-container">
+				<button
+					onclick="window.open('https://github.com/MakennaWorley/Card-Games-Python', '_blank')"
+					class="external-social-button"
+					id="github-button"
+				>
+					<img src="images/github.webp" alt="github icon" class="external-social-icon" />
+					Link to GitHub Repo
+				</button>
+			</div>
+		</div>
 	</div>
 
-	<div class="center-content">
+	<div class="center-content padding-bottom">
 		<h1>Continuous Learning & Experimentation</h1>
 		<div class="mini-block-container padding">
 			<div class="mini-block-text center-content">
@@ -242,41 +352,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="block-text center-content">
-		<div id="texas-holdem" class="project">
-			<h1>Card Games: Texas Hold'em</h1>
-			<h2>Python, Unit Testing, Test Driven Development</h2>
-			<p>
-				I wanted to practice what I had learned in my AI class so I recreated Texas Hold'em in Python with different players: random, human,
-				alpha-beta pruning, and minimax. This is more of a silly project I spun up on a weekend as a weekend project to give myself something
-				to do.
-			</p>
-			<p>
-				The largest challenge with this project was making sure the hand ranks were properly calculated, which meant a lot of Python unit
-				testing, which I haven't done a ton of. I learned a lot about test-driven development, which allows me to quickly make sure all my
-				code works as expected.
-			</p>
-			<p>
-				This project is purely built with Python using a couple of functions from itertools, collections, pandas, unittest, math, and random.
-				I might rewrite this code to use only my code and no external libraries.
-			</p>
-			<p>
-				While this project was primarily a weekend challenge for fun, it sharpened my skills in implementing AI strategies and test-driven
-				development.
-			</p>
-			<div class="button-container">
-				<button
-					onclick="window.open('https://github.com/MakennaWorley/Card-Games-Python', '_blank')"
-					class="external-social-button"
-					id="github-button"
-				>
-					<img src="images/github.webp" alt="github icon" class="external-social-icon" />
-					Link to GitHub Repo
-				</button>
 			</div>
 		</div>
 	</div>
