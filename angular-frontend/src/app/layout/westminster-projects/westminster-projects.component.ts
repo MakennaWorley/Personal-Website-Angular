@@ -200,6 +200,18 @@ export class WestminsterProjectsComponent {
 			active: true
 		},
 		{
+			title: 'Reef Watch',
+			subtitle: 'Final project for DATA 360: Data Science with Python<br/>Spring 2026',
+			paragraphs: [
+				"Reef Watch is an interactive Streamlit dashboard for exploring global coral reef health monitoring data from NOAA's Coral Reef Watch program. The application visualizes thermal stress metrics, bleaching conditions, and historical trends across 363 reef monitoring stations worldwide, enabling researchers and conservationists to track ecosystem health and identify geographic patterns of thermal stress.",
+				'The project features a multi-tab interactive interface with synchronized zooming across time-series graphs, region and ocean-level aggregation views, and an advanced query builder for custom data export. The backend manages approximately 5.4 million records stored in MongoDB, with automatic daily updates via scheduled data ingestion from NOAA. I built custom station mapping logic that automatically classifies all 363 stations into oceans, regions, and subregions based on structured filenames and manual assignments.',
+				'I implemented the full data pipeline including web scraping with Selenium to collect NOAA data, data processing with Pandas and NumPy, MongoDB aggregation queries for efficient geographic filtering, and Plotly visualizations with interactive features like drag-to-zoom and synchronized hover states. Everything is containerized with Docker and Docker Compose for reproducible deployment.',
+				'The biggest challenge was designing an efficient data model for geographic aggregations across 363 stations, handling missing data gracefully, and optimizing query performance for large datasets while maintaining real-time responsiveness in the dashboard.'
+			],
+			github: ['https://github.com/MakennaWorley/Reef-Streamlit'],
+			active: false
+		},
+		{
 			title: 'Matrix Encryption',
 			subtitle: 'Final for MATH 362: Topics in Applied Mathematics<br/>Fall 2024',
 			paragraphs: [

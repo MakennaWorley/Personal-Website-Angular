@@ -171,6 +171,12 @@
 	}
 }
 
+.carousel.two-items {
+	.carousel-item {
+		width: clamp(300px, 70%, 700px) !important;
+	}
+}
+
 @media (max-width: 1650px) {
 	.carousel.two-items {
 		.carousel-item:not(.active) {
